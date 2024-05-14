@@ -1,0 +1,66 @@
+{
+  "title": "Building an e-comerance website in react",
+  "sections": [
+    {
+      "title": "Introduction",
+      "content": "Building an e-comereance website without using builders such as shopify or wix, can be a bit of a tricky task. In this article, ill go over how i designed and built a front-end e-comerance website completely in Reactjs, scss, Javascript and Bootstrap"
+    },
+    {
+      "title": "Things to consider",
+      "content": "When i was building the website, i wanted the visitor to be able to:",
+      "list": [
+        {
+          "item": "Easily browse from a list of products"
+        },
+        {
+          "item": "Add and remove items in their cart"
+        },
+        {
+          "item": "Make the website responsive, asscible and easy to use"
+        }
+      ]
+    },
+    {
+      "title": "Deciding on a theme",
+      "content": [
+        {
+          "paragraph": "As with any project its important to decide on a theme and a design plan before developing the website."
+        },
+        {
+          "paragraph": "While, planning the project. I first checked existing website's like E-Bay and Amazon. Then, i went over to Figma to look at various designs for the website. This gave me a good idea and a direction for what i wanted the website to look like. After spending some time researching, i stumbled upon a good theme on Figma. I decided to use this as a guide for the website design, but also added some of my own changes to it."
+        }
+      ],
+      "links": [
+        {
+          "link": "https://www.figma.com/community/file/1219312065205187851/full-e-commerce-website-ui-ux-design?searchSessionId=lvmmtadu-8gdhgl13jtu",
+          "title": "Figma design"
+        }
+      ]
+    },
+    {
+      "title": "Building the website",
+      "content": [
+        {
+          "paragraph": "This project took a bit more time then my previous projects. I also ran into a few issues but managed to find work-arounds for them."
+        },
+        {
+          "paragraph": "One of the first issues i came accross was adding diffrent catergories for the products. While the design was mostly an easy task, the logic behind it was tricky. I had a problem displaying which items are on sale; which items aren't and which products are related (Like software, watches, etc). Ideally, i wanted to use a single file/componet for this, so the code could be more efficent and better to mantain. Even though this project isnt for production, i still wanted to follow best practices."
+        },
+        {
+          "paragraph": "While i could do condional rendering; i needed to figure out how to make the componet only display the correct items in the other jsx files. For example, i needed to the Sale catergory to only display whats on sale, and the trending catergory to only display whats trending. I orginally, only wanted to use a single componet for this then export it from the file to the other jsx files that were using this componet, but after many failed attempts, i had to opt for using multiple componets then exporting them to their corrasponding categorys."
+        }
+      ]
+    },
+    {
+      "title": "Dynamic image importing",
+      "content": [
+        {
+          "paragraph": "I stored all of the product info in JSON documents, then retrived that info and rendered it in a jsx componet. While this worked for the text, price, etc. It didnt work for the images, the code to me looked correct and i also prompted chat gpt to look through it and it also didnt give me a reason why this wasen't working. After a bit of searching on the internet, i found that Vite dosent support dynamic images. So i had to comeup with a weird work around to solve this issue, what i did was pass the image name from the json file into the image source, then call a function from the image source, that will perform a switch statment to render the correct image."
+        },
+        {
+          "paragraph": "While, this did solve the issue i had and worked for this small project. if the project was a legimate e-comerence website, that would probably have hundreds or thousands of diffrent products, Using switch statment, then manually importing each image to it would probably cause performence issues."
+        }
+      ]
+    }
+  ]
+}

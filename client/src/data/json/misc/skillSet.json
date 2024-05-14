@@ -1,0 +1,71 @@
+{
+"SkillSet": [
+{
+  "id": 1,
+  "itemName": "HTML 5",
+  "img": "HtmlIcon"
+},
+{
+  "id": 2,
+  "itemName": "CSS 3",
+  "img": "CssIcon"
+},
+{
+  "id": 3,
+  "itemName": "JavaScript",
+  "img": "JavaScriptIcon"
+},
+{
+  "id": 4,
+  "itemName": "Bootstrap",
+  "img": "BootStrapIcon"
+},
+{
+  "id": 5,
+  "itemName": "React",
+  "img": "ReactIcon"
+},
+{
+  "id": 6,
+  "itemName": "Tauri",
+  "img": "TauriBar"
+},
+{
+  "id": 7,
+  "itemName": "Scss",
+  "img": "ScssIcon"
+},
+{
+  "id": 8,
+  "itemName": "TypeScript",
+  "img": "Typescriptbar"
+},
+{
+  "id": 9,
+  "itemName": "React Native",
+  "img": "ReactNativeBar"
+},
+{
+  "id": 10,
+  "itemName": "Vite",
+  "img": "ViteIcon"
+},
+{
+  "id": 11,
+  "itemName": "Webpack",
+  "img": "WebpackIcon"
+},
+{
+  "id": 12,
+  "itemName": "Web Development"
+},
+{
+  "id": 13,
+  "itemName": "Social media marketing"
+},
+{
+  "id": 14,
+  "itemName": "UI/UX Design"
+}
+]
+}

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "Heading": "Twitter Clone",
+      "Desc": "Its a front-end twitter clone built in React. Also was my first React project",
+      "Lang": "React • CSS3 • Bootstrap",
+      "SourceLink": "https://github.com/AtomicExpresso/twitter-clone",
+      "PreviewLink": "https://react-frontend-twitter-clone.netlify.app/"
+    },
+    {
+      "id": 2,
+      "Heading": "Personal Website",
+      "Desc": "My portfoilo and Personal website, it has my projects and blog",
+      "Lang": "React • TypeScript • Sass • Bootstrap",
+      "SourceLink": "https://github.com/AtomicExpresso/porfolio-v4",
+      "PreviewLink": "/"
+    },
+    {
+      "id": 3,
+      "Heading": "E-comerance website",
+      "Desc": "A front-end e-comerance website built with React. Has a add to cart feature, plus a few others",
+      "Lang": "React • Sass • Bootstrap",
+      "SourceLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
+      "PreviewLink": "https://github.com/AtomicExpresso/React_E-comerance_Website"
+    }
+  ]
+}

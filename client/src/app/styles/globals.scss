@@ -1,0 +1,25 @@
+//Default styling for the whole application
+
+@font-face {
+  font-family: 'Jhal-Muri';
+  src: url(../../fonts/Jhal-Muri.ttf);
+}
+
+@font-face {
+  font-family: 'hey-comic';
+  src: url(../../fonts/hey-comic.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+li {
+  list-style: none;
+}
