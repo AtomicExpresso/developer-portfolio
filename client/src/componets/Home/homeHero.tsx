@@ -27,7 +27,9 @@ function HomeHero() {
           <Image src={ProfilePic} draggable='false' alt="Profile picture"></Image>
         </div>
       </div>
-      <Image src={WhiteWave} className='page-wave' draggable='false' alt="Page wave"></Image>
+      <div className="wave-componet">
+        <Image src={WhiteWave} className='page-wave' draggable='false' alt="Page wave"></Image>
+      </div>
     </div>
   );
 }

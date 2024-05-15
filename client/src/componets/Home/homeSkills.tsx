@@ -22,7 +22,9 @@ function HomeSkills(){
 
   return(
     <div className='home-skills'>
-      <Image src={TopWave} draggable='false' alt="Page wave"></Image>
+       <div className="wave-componet">
+        <Image src={TopWave} draggable='false' alt="Page wave"></Image>
+        </div>
       <div className='home-inner-content'>
         <div className='skills-txt'>
           <Image src={HammerIcon} draggable='false' alt="Icon"></Image>
@@ -33,7 +35,9 @@ function HomeSkills(){
           <BuildSkillSet/>
         </div>
       </div>
-      <Image src={BottomWave} draggable='false' alt="Page wave"></Image>
+      <div className="wave-componet">
+        <Image src={BottomWave} draggable='false' alt="Page wave"></Image>
+      </div>
     </div>
   )
 }

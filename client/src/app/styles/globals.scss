@@ -10,6 +10,29 @@
   src: url(../../fonts/hey-comic.ttf);
 }
 
+$font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$line-height: 1.5;
+$font-weight: 400;
+
+$--header-text-color: #252622;
+$--header-text-color-secondary: #3A86FF;
+$--header-text-color-third: #ffff;
+$--para-text-color: #484B45;
+
+$--header-text-color-clicked: #3477e3;
+
+$--background-secondary-color: #ffc107;
+$--background-third-color: #484B45;
+
+$color-scheme: light dark;
+$color: rgba(255, 255, 255, 0.87);
+$background-color: #242424;
+
+$font-synthesis: none;
+$text-rendering: optimizeLegibility;
+$-webkit-font-smoothing: antialiased;
+$-moz-osx-font-smoothing: grayscale;
+
 body {
   margin: 0;
   padding: 0;
@@ -22,4 +45,235 @@ h1 {
 
 li {
   list-style: none;
+}
+
+.wave-componet img{
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: $--header-text-color-third;
+  width: 100%;
+  z-index: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+
+  & h1{
+    font-family: 'Jhal-Muri';
+    font-weight: 900;
+  }
+
+  & .nav-title{
+    text-decoration: none;
+    color: $--header-text-color;
+  }
+
+  & .nav-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    & img{
+      height:  42px;
+      width: 42px;
+      border-radius: 50%;
+      margin: 5px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  & a:not(.nav-title) {
+    color: $--header-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.4s;
+    color: $--background-third-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.4s;
+    }
+
+    &:hover {
+      color: $--header-text-color-secondary;
+    }
+
+    &:hover::after {
+      animation: navAni 0.5s forwards;
+      background-color: $--header-text-color-secondary;
+    }
+  }
+}
+
+.darkmode-toggle{
+  width: 90px;
+  height: 32px;
+  margin: auto 10px;
+  background-color: transparent;
+  border: none;
+
+  & .darkmode-toggle--day{
+    animation: daytonightbg 0.7s forwards;
+    background-image: url(../../assets/images/functional/darkmode-switch-light.svg);
+
+    & img {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      right: 5%;
+      animation: nighttoday 0.7s forwards;
+      bottom: 2%;
+    }
+  }
+
+  & .darkmode-toggle--night{
+    animation: daytonightbg 0.7s forwards;
+
+    & img {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      bottom: 2%;
+      animation: daytonight 0.7s forwards;
+      left: 5%;
+    }
+  }
+
+  & div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mobile-nav,
+.mobile-navigation{
+  display: none;
+}
+
+@keyframes daytonightbg{
+  from {
+    filter: brightness(0.5);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+
+@keyframes daytonight {
+  from {
+    left: 5%;
+    transform: translateX(0%);
+  }
+  to {
+    left: 5%;
+    transform: translateX(40px);
+    filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.799));
+  }
+}
+
+@keyframes nighttoday {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-45px);
+    filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.799));
+  }
+}
+
+@keyframes navAni {
+  from {
+    transform: scaleX(0);
+    width: 100%;
+  }
+  to {
+    transform: scaleX(1);
+    width: 100%;
+  }
+}
+
+//==================================
+//Media Quarys
+
+@media (max-width:960px) {
+  .hero-col-2{
+    & img{
+      display: none;
+    }
+  }
+
+  .nav-bar {
+    & .non-mobile-nav{
+      display: none;
+    }
+  }
+
+  .mobile-navigation{
+    display: flex;
+  }
+
+  .mobile-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+
+    & img {
+      margin-left: auto;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:active{
+        scale: 0.9;
+      }
+    }
+  }
+
+  .mobile-nav-menu{
+    background-color: $--header-text-color-third;
+    border-bottom: solid 3px rgba(0, 0, 0, 0.153);
+    width: 100vw;
+    margin-top: 2%;
+    & ul {
+      gap: 5%;
+    }
+  }
+
+  .contact-me-container{
+    width: 80%;
+    & form {
+      width: 80%;
+    }
+  }
+
+  .blog-post-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+  }
 }
