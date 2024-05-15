@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles/globals.scss'
 import NavBar from '../componets/main/navBar';
+import Footer from '../componets/main/footer';
+import ScrollUp from '../componets/main/scrollBtn';
 
 const inter = Inter({ subsets: ["latin"] });
 //Default metadata
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar/>
+        <ScrollUp/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

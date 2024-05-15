@@ -213,6 +213,94 @@ li {
 }
 
 //==================================
+//Footer
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #242424;
+  color: $--header-text-color-third;
+  margin: 50px 0 0;
+
+  & h2 {
+    font-family: 'Jhal-Muri';
+  }
+  & a {
+    text-decoration: none;
+    color: $--header-text-color-third;
+  }
+
+  & .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 30px 80px;
+
+    & .footer-content h2{
+      font-size: 22px;
+    }
+  }
+
+  & .footer-col-2 p{
+    font-size: 15px;
+    max-width: 500px;
+  }
+
+  & .footer-row-2{
+     text-align: center;
+  }
+
+  & .footer-social-links {
+    display: flex;
+    gap: 10px;
+    margin: auto auto 15px;
+  
+    & img{
+      width: 25px;
+      height: 25px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7440%) hue-rotate(107deg) brightness(111%) contrast(101%);
+      cursor: pointer;
+      transition: 0.3s;
+  
+       &:hover{
+        filter: brightness(0) saturate(100%) invert(91%) sepia(0%) saturate(1590%) hue-rotate(209deg) brightness(95%) contrast(89%);
+        scale: 0.90;
+      }
+    }
+  }
+}
+
+//=================================
+//Scroll button
+.scroll-btn{
+  display: flex;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: $--header-text-color-secondary;
+  border-radius: 50%;
+  z-index: 50;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  & img{
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    z-index: 50;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(6%) hue-rotate(11deg) brightness(105%) contrast(100%);
+  }
+
+  &:hover{
+    scale: 0.94;
+  }
+}
+
+//==================================
 //Media Quarys
 
 @media (max-width:960px) {
