@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   description: "About me page, goes over a brief description about me, an overview of my skills and education",
 };
 
-function AboutPage(){
+function AboutPage() {
   return (
     <div>
-      <AboutHero/>
-      <AboutContent/>
+      <AboutHero />
+      <AboutContent />
     </div>
   )
 }

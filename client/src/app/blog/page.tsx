@@ -1,21 +1,12 @@
-import React from 'react'
-import BlogHero from "../../componets/Blog/blogHero";
-import BlogContent from "../../componets/Blog/blogContent";
-import { Metadata } from 'next';
-import '../styles/blog-globals.scss'
+import BlogHero from "@/componets/Blog/blogHero";
+import '@/app/styles/blog-globals.scss'
+import BlogList from "@/componets/Blogs/BlogList";
 
-export const metadata: Metadata = {
-  title: "Pumped dev blog",
-  description: "Welcome to my personal blog, here ill write about things which may or may not be development related",
-};
-
-function BlogPage(){
+export default function BlogPageList(){
   return (
     <div>
       <BlogHero/>
-      <BlogContent/>
+      <BlogList/>
     </div>
   )
 }
-
-export default BlogPage

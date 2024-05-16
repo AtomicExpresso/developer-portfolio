@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
-import Logo from '../../../public/vercel.svg'
+import Logo from '../../../public/icon.webp'
 import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
 import DarkModeDay from '../../assets/images/functional/darkmode-switch-light.svg';
 import DarkModeNight from '../../assets/images/functional/darkmode-switch-dark.svg';

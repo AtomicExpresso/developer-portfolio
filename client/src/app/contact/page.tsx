@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   description: "Fill out this form or send me a message on one of my socials to get in touch",
 };
 
-function ContactPage(){
+function ContactPage() {
   return (
     <div>
-      <ContactHero/>
-      <ContactBox/>
+      <ContactHero />
+      <ContactBox />
     </div>
   )
 }

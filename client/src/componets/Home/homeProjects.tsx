@@ -6,8 +6,8 @@ import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
 import projectInfo from '../../Data/json/misc/projectInfo.json';
 import Image from 'next/image';
 
-function GrabImage(Image: string){
-  switch(Image){
+function GrabImage(ImageName: string){
+  switch(ImageName){
     case "Twitter Clone":
       return TwitterThumbnail;
     break;

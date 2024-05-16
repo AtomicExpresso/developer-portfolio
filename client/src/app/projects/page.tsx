@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   description: "Heres a full list of my best public projects. Build using a wide range of languages and libaries",
 };
 
-function ProjectPage(){
+function ProjectPage() {
   return (
     <div>
-      <ProjectHero/>
-      <ProjectsTile/>
-      <ProjectContainer/>
+      <ProjectHero />
+      <ProjectsTile />
+      <ProjectContainer />
     </div>
   )
 }

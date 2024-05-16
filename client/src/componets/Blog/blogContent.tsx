@@ -14,7 +14,7 @@ function BlogContent(){
           <h2>{item.Date}</h2>
         </div>
         <div>{item.PostPreview}</div>
-        <a href={`blog/${item.Link}`}><button className="btn btn-primary">View</button></a>
+        <a href={`blogpost/${item.Link}`}><button className="btn btn-primary">View</button></a>
       </div>
     )
   }

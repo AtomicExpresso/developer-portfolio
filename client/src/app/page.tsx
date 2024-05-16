@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Welcome to my porfilo! here you can view some of my public projects, blog, and more. Feel free to get in touch if you have any questions!",
 };
 
-function HomePage(){
+function HomePage() {
   return (
     <div>
       <HomeHero></HomeHero>
