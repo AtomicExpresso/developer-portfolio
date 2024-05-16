@@ -43,10 +43,6 @@ h1 {
   line-height: 1.1;
 }
 
-li {
-  list-style: none;
-}
-
 .wave-componet img{
   height: 100%;
   width: 100%;
@@ -63,6 +59,10 @@ li {
   z-index: 500;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
+
+  li {
+    list-style: none;
+  }
 
   & h1{
     font-family: 'Jhal-Muri';

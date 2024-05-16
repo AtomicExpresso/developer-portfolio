@@ -13,7 +13,9 @@ type Props = {
 type PostData = {
   title: string
   date: string
+  author: string
   contentHtml: string
+  tags: string
 }
 
 export async function GenerateMetaData({params}: Props){
@@ -30,8 +32,20 @@ export default async function BlogPage({ params }: Props){
   return (
     <div>
       <BlogHero/>
-      <h1>{postData.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
+      <div className="blog-page-content">
+        <h1>{postData.title}</h1>
+        <div className="blog-page-info">
+          <h3>{postData.author}</h3>
+          <h3>•</h3>
+          <h3>{postData.date}</h3>
+          <h3>•</h3>
+          <div className="blog-page-tag">
+            <h3><span>#</span> {postData.tags}</h3>
+          </div>
+        </div>
+        <hr></hr>
+        <div className="blog-page-markdown" dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
+      </div>
     </div>
   )
 }
