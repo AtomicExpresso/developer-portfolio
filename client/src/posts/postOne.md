@@ -1,8 +1,8 @@
 ---
 title: 'Developer Portfolios'
 date: '04-15-2024'
-author: "Felix"
-tags: "Developement"
+author: "Admin"
+tags: "Development"
 ---
 
 Developer portfolios are an excellent tool for making a lasting impression on potential clients or recruiters. In this article, I'll walk you through how I built my portfolio and my thought process behind it.
@@ -17,7 +17,7 @@ When i was building my portfolio, i wanted the visitor to be able to:
 
 ### **Deciding on a theme**
 
-Before I started building my portfolio website, I wanted to look through some other developer portfolios to give me some ideas, fortunately  I found a [github repo](https://github.com/emmabostian/developer-portfolios) that had a huge list of
+Before I started building my portfolio website, I wanted to look through some other developer portfolios to give me some ideas, fortunately  I found a [github repo](https://github.com/emmabostian/developer-portfolios) that had a huge list of them.
 
 When I was choosing my theme, I wanted something that would not only reflect my skills and experience but also capture attention and leave a positive impression on the visitor. I decided to go with a creative and modern approach to my theme.
 
