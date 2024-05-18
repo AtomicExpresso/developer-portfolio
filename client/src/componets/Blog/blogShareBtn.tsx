@@ -54,7 +54,7 @@ export default function BlogShareBtn() {
         <div className="blog-share-popup">
           <SocialBtnConstructor props={{name: "twitter", icon: twittericon, clickType: TweetUrl}}/>
           <SocialBtnConstructor props={{name: "facebook", icon:facebookicon, clickType: FacebookUrl}}/>
-          <SocialBtnConstructor props={{name: "share", icon:linkicon, clickType: CopyUrl}}/>
+          <SocialBtnConstructor props={{name: "url", icon:linkicon, clickType: CopyUrl}}/>
         </div>
       }
     </div>
