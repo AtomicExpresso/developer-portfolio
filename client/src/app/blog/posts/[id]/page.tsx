@@ -1,6 +1,7 @@
 import BlogHero from "@/componets/Blog/blogHero";
+import BlogShareBtn from "@/componets/Blog/blogShareBtn";
 import '@/app/styles/blog-globals.scss';
-import { getAllPostIds, getPostData } from '@/lib/posts'
+import { getAllPostIds, getPostData } from '@/lib/posts';
 
 type Params = {
   id: string
@@ -42,6 +43,7 @@ export default async function BlogPage({ params }: Props){
           <div className="blog-page-tag">
             <h3><span>#</span> {postData.tags}</h3>
           </div>
+          <BlogShareBtn/>
         </div>
         <hr></hr>
         <div className="blog-page-markdown" dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>

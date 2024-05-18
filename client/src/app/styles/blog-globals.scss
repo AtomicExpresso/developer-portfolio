@@ -190,3 +190,38 @@ $-moz-osx-font-smoothing: grayscale;
     color: #484B45
   }
 }
+
+//Share btn
+#blog-share-btn{
+  background: none;
+  border: none;
+}
+
+.blog-share-popup{
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.btn-popup-share-item{
+  & button {
+    display: flex;
+    gap: 5px;
+    background: none;
+    border: transparent;
+    transition: 0.3s;
+    padding: 1px 5px;
+    width: 140px;
+
+    & h1 {
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: rgba(221, 221, 221, 0.342);
+    }
+  }
+}

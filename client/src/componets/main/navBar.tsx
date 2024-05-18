@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import { usePathname } from 'next/navigation'
 import Logo from '../../../public/icon.webp'
 import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
 import DarkModeDay from '../../assets/images/functional/darkmode-switch-light.svg';
@@ -19,13 +20,11 @@ import Link from "next/link";
 function Navbar() {
   const [openMNav, SetOpenMNav] = useState(false);
 
+  const pathname = usePathname();
+
   const isMobileNavOpen = () => {
     SetOpenMNav(prevState => !prevState);
   }
-
-  const activeStyle: React.CSSProperties = {
-    color: '#0d6efd', // Active color for nav links
-  };
 
   return (
       <div className="nav-bar">
@@ -36,19 +35,19 @@ function Navbar() {
       <nav className="non-mobile-nav">
         <ul>
           <li>
-            <Link href="/">Home</Link>
+            <Link style={{color: pathname === '/' ? `#0d6efd` : ''}} href="/">Home</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link style={{color: pathname === '/projects' ? `#0d6efd` : ''}} href="/projects">Projects</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link style={{color: pathname === '/blog' ? `#0d6efd` : ''}} href="/blog">Blog</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link style={{color: pathname === '/contact' ? `#0d6efd` : ''}} href="/contact">Contact</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link style={{color: pathname === '/about' ? `#0d6efd` : ''}} href="/about">About</Link>
           </li>
           <li>
           </li>
