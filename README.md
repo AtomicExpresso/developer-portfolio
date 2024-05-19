@@ -1,6 +1,6 @@
 # Developer Portfoilo project ☕
 
-My developer portfolio, built using Reactjs, Nextjs, Typescript, Vite, Scss and Bootstrap.
+My developer portfolio, built using Reactjs, Nextjs, Typescript, Scss and Bootstrap.
 
 ## Features ⚙️
 - Mobile support with navigation bar
