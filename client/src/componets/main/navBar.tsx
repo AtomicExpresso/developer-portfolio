@@ -1,12 +1,10 @@
 'use client'
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { usePathname } from 'next/navigation'
 import Logo from '../../../public/icon.webp'
 import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
-import DarkModeDay from '../../assets/images/functional/darkmode-switch-light.svg';
-import DarkModeNight from '../../assets/images/functional/darkmode-switch-dark.svg';
 import SunBtn from '../../assets/images/functional/sun-button.svg';
 import MoonBtn from '../../assets/images/functional/moon-button.svg';
 import Image from "next/image";
@@ -19,8 +17,27 @@ import Link from "next/link";
 
 function Navbar() {
   const [openMNav, SetOpenMNav] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const pathname = usePathname();
+
+  //Changes page theme based on darkmode state
+  useEffect(() => {
+    const root = document.getElementById('root');
+
+    if(darkMode){
+      root?.classList.add('night-mode') 
+      root?.classList.remove('day-mode')
+    } else {
+      root?.classList.add('day-mode') 
+      root?.classList.remove('night-mode')
+    }
+
+  }, [darkMode])
+
+  const switchTheme = () => {
+    setDarkMode(prevState => !prevState)
+  }
 
   const isMobileNavOpen = () => {
     SetOpenMNav(prevState => !prevState);
@@ -50,6 +67,18 @@ function Navbar() {
             <Link style={{color: pathname === '/about' ? `#0d6efd` : ''}} href="/about">About</Link>
           </li>
           <li>
+            <div className="dark-mode-toggle">
+              <button onClick={switchTheme}>
+                {darkMode ? 
+                <div className="dark-mode-nighttime">
+                  <Image draggable="false" alt="dark-mode" src={MoonBtn}></Image>
+                </div> :
+                <div className="dark-mode-daytime">
+                  <Image draggable="false" alt="light-mode" src={SunBtn}></Image>
+                </div>
+                }
+              </button>
+            </div>
           </li>
         </ul>
       </nav>

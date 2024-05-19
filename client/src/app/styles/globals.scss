@@ -301,6 +301,177 @@ h1 {
     scale: 0.94;
   }
 }
+//==================================
+//Dark mode
+
+.dark-mode-daytime{
+  background-image: url('../../assets/images/functional/darkmode-switch-light.svg');
+  background-size: cover;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  animation: daytimeSwitch 0.6s forwards;
+
+  & img {
+    position: absolute;
+    left: -10%;
+    animation: dayTimeSwitchSun 1s forwards;
+  }
+
+  @keyframes daytimeSwitch {
+    from {
+      filter: opacity(0);
+    }
+    to {
+      filter: opacity(1);
+    }
+  }
+
+  @keyframes dayTimeSwitchSun {
+    from {
+      
+    }
+    to {
+      transform: translateX(35px);
+    }
+  }
+}
+
+.dark-mode-nighttime{
+  background-image: url('../../assets/images/functional/darkmode-switch-dark.svg');
+  background-size: cover;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  animation: nighttimeSwitch 0.6s forwards;
+
+  & img {
+    position: absolute;
+    left: -10%;
+    animation: dayTimeSwitchMoon 1s forwards;
+  }
+
+  @keyframes nighttimeSwitch {
+    from {
+      filter: opacity(0);
+    }
+    to {
+      filter: opacity(1);
+    }
+  }
+
+  @keyframes dayTimeSwitchMoon {
+    from {
+      
+    }
+    to {
+      transform: translateX(-20px);
+    }
+  }
+}
+
+.dark-mode-toggle{
+  & button {
+    background: none;
+    border: none;
+  }
+
+  & img {
+    width: 100px;
+    height: 35px;
+  }
+}
+
+.night-mode {
+  background-color: #1c1c1c;
+  color: white;
+
+  & .home-skills {
+    & .wave-componet{
+      filter: brightness(0) saturate(100%) invert(9%) sepia(0%) saturate(3%) hue-rotate(66deg) brightness(97%) contrast(84%);
+    }
+  }
+
+  & .home-inner-content {
+    background-color: #272727;
+  }
+
+  & .nav-bar {
+    background-color: #272727;
+
+    & a {
+      color: white;
+    }
+  }
+
+  & .project-back {
+    background-color: #272727;
+    color: black;
+  }
+
+  & .blog-share-btn{
+    & img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(256deg) brightness(104%) contrast(101%);
+    }
+  }
+
+  & .projects-page-title {
+    & h1 {
+      color: white;
+    }
+  }
+
+  & .home-info {
+    & p {
+      color: white;
+    }
+  }
+
+  & .page-wave{
+      filter: brightness(0) saturate(100%) invert(7%) sepia(4%) saturate(15%) hue-rotate(156deg) brightness(94%) contrast(90%);
+  }
+
+  & .project-page-item,
+    .blog-list-item{
+    background-color: #272727;
+
+    & h3 {
+      color: white;
+    }
+  }
+
+  & .about-content{
+    background-color: #272727;
+  }
+
+  & .contact-me-container{
+    background-color: #272727;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(4%) hue-rotate(227deg) brightness(106%) contrast(100%);
+    }
+
+    input {
+      background-color: #3e3e3e;
+      
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+
+  & .blog-share-popup {
+    background-color: #272727;
+
+    h1 {
+      color: white;
+    }
+    
+    img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(256deg) brightness(104%) contrast(101%);
+    }
+  }
+}
 
 //==================================
 //Media Quarys
