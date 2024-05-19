@@ -30,7 +30,7 @@ function HomeProjects(){
   const BuildProject = projectInfo.projects.map(item => {
     return (
       <div key={item.id} className={`project-item project-item-${item.id}`} data-front-content={item.Heading} data-back-content={item.Desc}>
-      <div className="project-front" style={{backgroundImage: `url(${GrabImage(item.Heading)})`, backgroundSize: 'cover'}}></div>
+      <div className="project-front" draggable='false'><Image alt={item.Heading} src={GrabImage(item.Heading)}></Image></div>
       <div className="project-back">
         <h1>{item.Heading}</h1>
         {item.Desc}

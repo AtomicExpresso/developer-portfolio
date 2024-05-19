@@ -277,6 +277,12 @@
     & h1 {
       font-size: 25px;
     }
+
+    & img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
   }
 
   & .project-front{
