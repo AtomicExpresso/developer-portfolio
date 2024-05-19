@@ -19,7 +19,7 @@ type PostData = {
   tags: string
 }
 
-export async function GenerateMetaData({params}: Props){
+export async function GenerateMetaData({params}: Props): Promise<{title: string}>{
   const postData: PostData = await getPostData(params.id);
 
   return {

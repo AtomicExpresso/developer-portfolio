@@ -46,7 +46,7 @@ function HomeProjects(){
         <Image src={ProjectIcon} draggable='false' alt="Projects icon"></Image>
         <h1>My Projects</h1>
       </div>
-      <p>Heres a list of my best projects i've developed and worked on</p>
+      <p>Heres a list of my best projects ive developed and worked on</p>
       <hr></hr>
       <div className="project-list-container">
         {BuildProject}

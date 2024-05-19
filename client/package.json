@@ -18,7 +18,8 @@
     "react-helmet": "^6.1.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sass": "^1.77.1"
+    "sass": "^1.77.1",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@types/node": "^20",
