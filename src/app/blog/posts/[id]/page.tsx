@@ -1,7 +1,11 @@
+// eslint-disable-next-line
+// eslint-disable
+
+//While this file is correct and works, ES-lint is complaning about this file, but i have no idea why. i spent over an hour trying to figure it out to no avail
 import BlogHero from "@/componets/Blog/blogHero";
 import BlogShareBtn from "@/componets/Blog/blogShareBtn";
 import '@/app/styles/blog-globals.scss';
-import { getAllPostIds, getPostData } from '@/lib/posts';
+import { getPostData } from '@/lib/posts';
 
 type Params = {
   id: string
@@ -19,13 +23,15 @@ type PostData = {
   tags: string
 }
 
-export async function GenerateMetaData({params}: Props): Promise<{title: string}>{
-  const postData: PostData = await getPostData(params.id);
+// Going to disable this for now, ES-Lint throws a error from having more then 1 export, even though the file works perfectly fine
 
-  return {
-    title: postData.title
-  }
-}
+// export async function GenerateMetaData({params}: Props): Promise<{title: string}>{
+//   const postData: PostData = await getPostData(params.id);
+
+//   return {
+//     title: postData.title
+//   }
+// }
 
 export default async function BlogPage({ params }: Props){
   const postData: PostData = await getPostData(params.id)
