@@ -1,7 +1,3 @@
-// eslint-disable-next-line
-// eslint-disable
-
-//While this file is correct and works, ES-lint is complaning about this file, but i have no idea why. i spent over an hour trying to figure it out to no avail
 import BlogHero from "@/componets/Blog/blogHero";
 import BlogShareBtn from "@/componets/Blog/blogShareBtn";
 import '@/app/styles/blog-globals.scss';
@@ -9,10 +5,6 @@ import { getPostData } from '@/lib/posts';
 
 type Params = {
   id: string
-}
-
-type Props = {
-  params: Params
 }
 
 type PostData = {
@@ -23,18 +15,12 @@ type PostData = {
   tags: string
 }
 
-// Going to disable this for now, ES-Lint throws a error from having more then 1 export, even though the file works perfectly fine
+export default async function BlogPage({ params }: { params: Params }){
+  // Generate metadata
+  const metaData = await generateMetaData(params);
 
-// export async function GenerateMetaData({params}: Props): Promise<{title: string}>{
-//   const postData: PostData = await getPostData(params.id);
-
-//   return {
-//     title: postData.title
-//   }
-// }
-
-export default async function BlogPage({ params }: Props){
-  const postData: PostData = await getPostData(params.id)
+  // Get post data
+  const postData: PostData = await getPostData(params.id);
 
   return (
     <div>
@@ -56,4 +42,13 @@ export default async function BlogPage({ params }: Props){
       </div>
     </div>
   )
+}
+
+// Function to generate metadata
+async function generateMetaData(params: Params): Promise<{title: string}> {
+  const postData: PostData = await getPostData(params.id);
+
+  return {
+    title: postData.title
+  };
 }
