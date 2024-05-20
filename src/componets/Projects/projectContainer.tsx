@@ -4,7 +4,7 @@ import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.w
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
 import Image from 'next/image';
 
-import projectInfo from '../../Data/json/misc/projectInfo.json'
+import projectInfo from '../../../public/projectInfo.json'
 
 function GrabImg(Img: string){
   switch(Img){

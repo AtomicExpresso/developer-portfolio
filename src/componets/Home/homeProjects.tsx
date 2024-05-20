@@ -3,7 +3,7 @@ import ProjectIcon from '../../assets/images/icons/decor/paintbrush-solid.svg';
 import TwitterThumbnail from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteThumbnail from '../../assets/images/thumbnails/personal-website.webp';
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
-import projectInfo from '../../Data/json/misc/projectInfo.json';
+import projectInfo from '../../../public/projectInfo.json';
 import Image from 'next/image';
 
 function GrabImage(ImageName: string){
