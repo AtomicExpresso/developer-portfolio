@@ -30,7 +30,7 @@ export default function BlogList() {
                   <h3>•</h3>
                   <h3>{date}</h3>
                 </div>
-              <Link href={`/blog/posts/${id}`}><button className='btn btn-primary'>View</button></Link>
+              <Link href={`/blog/posts/[id]`} as={`/blog/posts/${id}`}><button className='btn btn-primary'>View</button></Link>
             </div>
           ))}
       </section>

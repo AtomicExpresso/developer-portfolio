@@ -2,6 +2,7 @@ import BlogHero from "@/componets/Blog/blogHero";
 import BlogShareBtn from "@/componets/Blog/blogShareBtn";
 import '@/app/styles/blog-globals.scss';
 import { getPostData } from '@/lib/posts';
+import {GetStaticProps, GetStaticPaths, InferGetStaticPropsType} from 'next'
 
 type Params = {
   id: string
