@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 import Image from "next/image";
 import ErrorImage from "@/assets/images/decorations/NotFound.webp";
 import Link from "next/link";
