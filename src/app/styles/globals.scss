@@ -473,6 +473,22 @@ h1 {
   }
 }
 
+//=====================
+//Error / 404 page
+.error-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  & img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
 //==================================
 //Media Quarys
 
