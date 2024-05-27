@@ -67,13 +67,16 @@ h1 {
   & h1{
     font-family: 'Jhal-Muri';
     font-weight: 900;
-    font-size: 40px;
+    font-size: 33px;
     margin: 6px 0;
   }
 
   & .nav-title{
+    display: flex;
     text-decoration: none;
     color: $--header-text-color;
+    justify-content: center;
+    align-items: center;
   }
 
   & .nav-row{
@@ -237,7 +240,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 10px;
-    padding: 30px 80px;
+    padding: 30px 20px;
 
     & .footer-content h2{
       font-size: 22px;
@@ -540,9 +543,41 @@ h1 {
   }
 
   .contact-me-container{
-    width: 80%;
+    width: 80% !important;
+
+    & .row-one {
+      img {
+        margin-left: auto;
+      }
+    }
+    & h1 {
+      font-size: 25px;
+    }
+
+    & label {
+      font-size: 12px;
+      margin-right: auto;
+    }
+
     & form {
-      width: 80%;
+      width: 100%;
+      margin: auto;
+
+      input {
+        height: 35px;
+        width: 80%;
+        margin: auto;
+      }
+
+      textarea{
+        width: 80%;
+        margin: auto;
+      }
+
+      button {
+        width: 70%;
+        margin: auto;
+      }
     }
   }
 

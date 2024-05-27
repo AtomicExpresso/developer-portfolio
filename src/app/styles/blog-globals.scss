@@ -144,6 +144,8 @@ $-moz-osx-font-smoothing: grayscale;
 }
 
 .blog-section{
+  display: flex;
+  gap: 10px;
   margin: 40px 20px;
 }
 
@@ -151,11 +153,12 @@ $-moz-osx-font-smoothing: grayscale;
   width: 250px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 15px;
   transition: 0.5s;
+  position: relative;
 
   &:hover {
     transform: translateY(-30px);
@@ -169,13 +172,20 @@ $-moz-osx-font-smoothing: grayscale;
   }
 
   & h2 {
-    font-size: 27px;
+    font-size: 23px;
     font-weight: bold;
   }
 
   & button {
+    position: absolute;
     width: 50%;
-    margin-bottom: 20px;
+    bottom: 2%;
+    left: 25%;
+  }
+
+  & p {
+    font-size: 12px;
+    padding-bottom: 30px;
   }
 }
 
@@ -186,7 +196,7 @@ $-moz-osx-font-smoothing: grayscale;
   text-align: center;
 
   & h3 {
-    font-size: 13px;
+    font-size: 12px;
     color: #484B45
   }
 }

@@ -12,7 +12,7 @@ function HomeHero() {
     <div className="hero-container">
       <div className='hero-group'>
         <div className="hero-col-1">
-          <h1>Hello 👋, I&apos;m <span>Atomic</span></h1>
+          <h1>Hello 👋, I&apos;m <span>Pumped</span></h1>
           <h2>I&apos;m a <span>Front end developer</span></h2>
           <p>front-end developer, dedicated to transforming innovative concepts into functional and user-friendly web applications</p>
           <div className="hero-social-links">

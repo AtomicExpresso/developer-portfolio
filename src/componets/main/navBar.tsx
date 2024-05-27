@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useEffect } from "react";
-import { useState } from "react";
-import { usePathname } from 'next/navigation'
-import Logo from '../../../public/icon.webp'
+import { useState, useEffect } from "react";
+import { usePathname } from 'next/navigation';
+import ScreenWindowWidth from "./ScreenWidth";
+import Logo from '../../../public/icon.webp';
 import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
 import SunBtn from '../../assets/images/functional/sun-button.svg';
 import MoonBtn from '../../assets/images/functional/moon-button.svg';
@@ -16,10 +16,11 @@ import Link from "next/link";
 // }
 
 function Navbar() {
-  const [openMNav, SetOpenMNav] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [openMNav, SetOpenMNav] = useState(false); //For mobile navigation
+  const [darkMode, setDarkMode] = useState(false); //Darkmode theme
 
   const pathname = usePathname();
+  const screenWidth = ScreenWindowWidth(700); //Screen-Width cap, check the function file for more details
 
   //Changes page theme based on darkmode state
   useEffect(() => {
@@ -33,7 +34,7 @@ function Navbar() {
       root?.classList.remove('night-mode')
     }
 
-  }, [darkMode])
+  }, [darkMode]);
 
   const switchTheme = () => {
     setDarkMode(prevState => !prevState)
@@ -47,7 +48,7 @@ function Navbar() {
       <div className="nav-bar">
       <div className="nav-row">
         <a href="/" className="nav-title"><Image src={Logo} draggable='false' alt="Navigation logo"></Image></a>
-        <a href="/" className="nav-title"><h1>Atomic</h1></a>
+        <a href="/" className="nav-title">{screenWidth ? <h1>Pumped Pixel</h1> : <h1>Pumped</h1>}</a>
       </div>
       <nav className="non-mobile-nav">
         <ul>

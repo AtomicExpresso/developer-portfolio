@@ -9,7 +9,7 @@ import ViteIcon from '../../assets/images/icons/bars/vite-bar.svg';
 import WebpackIcon from '../../assets/images/icons/bars/webpack-bar.svg';
 import ProfileIcon from '../../assets/images/icons/decor/user-solid.svg';
 import TauriBar from '../../assets/images/icons/bars/tauri-bar.svg';
-import ReactNativeBar from '../../assets/images/icons/bars/reactnative-bar.svg';
+import NextjsBar from '../../assets/images/icons/bars/nextjs-bar.svg';
 import TypescriptBar from '../../assets/images/icons/bars/TypeScript-bar.svg';
 import Image from 'next/image';
 
@@ -22,7 +22,7 @@ function HomeInfo() {
         <h1>About Me</h1>
       </div>
       <hr></hr>
-      <p>👋 Hello there! I&apos;m Atomic, a dedicated front-end developer with a love for turning innovative ideas into reality. I mostly work in web development, however im also looking to expanding my skill set into other areas aswell.</p>
+      <p>👋 Hello there! I&apos;m Pumped, a dedicated front-end developer with a love for turning innovative ideas into reality. I mostly work in web development, however im also looking to expanding my skill set into other areas aswell.</p>
       <a href='/about'><button className="btn btn-primary">About Me</button></a>
       <div className="icon-list">
         <Image src={HtmlIcon} alt="html 5" draggable='false'></Image>
@@ -32,7 +32,7 @@ function HomeInfo() {
         <Image src={ReactIcon} alt="react" draggable='false'></Image>
         <Image src={ScssIcon} alt="scss" draggable='false'></Image>
         <Image src={ViteIcon} alt="vite" draggable='false'></Image>
-        <Image src={ReactNativeBar} alt="React Native" draggable='false'></Image>
+        <Image src={NextjsBar} alt="Next js" draggable='false'></Image>
         <Image src={TypescriptBar} alt="Typescript" draggable='false'></Image>
         <Image src={TauriBar} alt="Tauri" draggable='false'></Image>
         <Image src={WebpackIcon} alt="webpack" draggable='false'></Image>

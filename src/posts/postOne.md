@@ -3,6 +3,7 @@ title: 'Developer Portfolios'
 date: '04-15-2024'
 author: "Admin"
 tags: "Development"
+preview: "how I built my portfolio and my thought process behind it."
 ---
 
 Developer portfolios are an excellent tool for making a lasting impression on potential clients or recruiters. In this article, I'll walk you through how I built my portfolio and my thought process behind it.
@@ -57,4 +58,4 @@ The contact form allows people to send me an email directly from the website. I 
 
 ### **Conclusion**
 
-That about wraps it up! That was the breakdown on how I built my portfolio from scratch. I built it entirely in TypeScript and Sass. It turned out a lot better than I thought it would and i’m excited to continue refining and expanding my portfolio as my journey in tech progresses. If you're curious about any specific aspect or want to discuss further, feel free to reach out. Until then, keep coding! 👩‍💻🚀
+That about wraps it up! That was the breakdown on how I built my portfolio from scratch. I built it entirely in TypeScript, Nextjs, and Sass. It turned out a lot better than I thought it would and i’m excited to continue refining and expanding my portfolio as my journey in tech progresses. If you're curious about any specific aspect or want to discuss further, feel free to reach out. Until then, keep coding! 👩‍💻🚀
