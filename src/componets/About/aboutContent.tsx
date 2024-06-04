@@ -13,7 +13,7 @@ const Paragraphs = [
   },
   {
     id: 3,
-    Para: "Apart from programming, i also like going for walks, hiking, working out, reading a good book, studying history and cooking."
+    Para: "Apart from programming, i also like going for walks, reading a good book, and cooking"
   }
 ]
 
