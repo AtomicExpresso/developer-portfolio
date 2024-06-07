@@ -36,6 +36,7 @@ $-moz-osx-font-smoothing: grayscale;
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -388,6 +389,10 @@ h1 {
 .night-mode {
   background-color: #1c1c1c;
   color: white;
+
+  button {
+    color: white !important;
+  }
 
   & .home-skills {
     & .wave-componet{

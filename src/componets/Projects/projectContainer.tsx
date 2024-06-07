@@ -2,9 +2,11 @@ import React from 'react'
 import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
+import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
+
 import Image from 'next/image';
 
-import projectInfo from '../../../public/projectInfo.json'
+import projectInfo from '../../../public/projectItemContent.json'
 
 function GrabImg(Img: string){
   switch(Img){
@@ -17,6 +19,9 @@ function GrabImg(Img: string){
     case "E-comerance website":
       return EconmProjectTn;
     break;
+    case "MovieBox":
+      return MovieBoxTn;
+    break;
     default:
       return TwitterCloneTn;
     break;
@@ -24,19 +29,16 @@ function GrabImg(Img: string){
 }
 
 function ProjectContainer(){
-  const ConstructProjectItem = projectInfo.projects.map((item, index) => {
+  const ConstructProjectItem = projectInfo.results.map((item, index) => {
     return (
       <div className="project-page-item" key={index}>
-        <Image src={GrabImg(item.Heading)} draggable='false' alt={`${item.Heading}`}></Image>
-        <h1>{item.Heading}</h1>
+        <Image src={GrabImg(item.name)} draggable='false' alt={`${item.name}`}></Image>
+        <h1>{item.name}</h1>
         <h2>{item.Lang}</h2>
-        <p>{item.Desc}</p>
+        <p>{item.previewDesc}</p>
         <div className='project-item-btn'>
-          <a href={item.PreviewLink}>
-            <button className="btn btn-primary">Live View</button>
-          </a>
-          <a href={item.SourceLink}>
-            <button className="btn btn-success">Source Code</button>
+          <a href={item.ProjectLink}>
+            <button className="btn btn-primary">View</button>
           </a>
         </div>
       </div>

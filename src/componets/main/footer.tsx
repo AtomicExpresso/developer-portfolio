@@ -25,7 +25,7 @@ function Footer(){
         </div>
         <hr></hr>
         <div className="footer-row-2">
-          <p>© Copyright 2024 | Made by <span><a href='https://github.com/AtomicExpresso'>Pumpedpixel</a></span></p>
+          <p>© Copyright 2023 | Made by <span><a href='https://github.com/AtomicExpresso'>Pumpedpixel</a></span></p>
         </div>
     </div>
   )

@@ -125,6 +125,10 @@
     & p{
       max-width: 290px;
     }
+
+    button {
+      width: 160px;
+    }
   
     &:hover{
       transform: translateY(-20px);

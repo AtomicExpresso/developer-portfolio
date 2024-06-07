@@ -1,0 +1,104 @@
+{
+  "results": [
+    {
+      "id": 0,
+      "name": "Twitter Clone",
+      "poster_path": "twitter-clone.webp",
+      "previewDesc": "Its a front-end twitter clone built in React. Also was my first React project",
+      "Lang": "React • CSS3 • Bootstrap",
+      "description": "A twitter clone",
+      "ProjectLink": "project/0",
+      "SourceLink": "https://github.com/AtomicExpresso/twitter-clone",
+      "PreviewLink": "https://react-frontend-twitter-clone.netlify.app/",
+      "features": [
+        {
+          "title": "Responsive design",
+          "description": "Website was built with responsive design in mind, ensuring support accross different devices"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "E-comerance Website",
+      "poster_path": "EcomTn",
+      "previewDesc": "A front-end e-comerance website built with React. Has a add to cart feature, plus a few others",
+      "Lang": "React • Sass • Bootstrap",
+      "description": "An Ecomerance project built with vanillia js, react and bootstrap.",
+      "ProjectLink": "project/1",
+      "SourceLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
+      "PreviewLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
+      "features": [
+        {
+          "title": "Responsive design",
+          "description": "Website was built with responsive design in mind, ensuring support accross different devices"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "MovieBox",
+      "poster_path": "MovieBoxTn",
+      "previewDesc": "A fully responsive concept streaming platform, featuring detailed info about shows and movies",
+      "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
+      "description": "A concept streaming platform built using Nextjs, Typescript, Scss, and Bootstrap. Uses the TMDB API for film data",
+      "ProjectLink": "project/2",
+      "SourceLink": "https://github.com/AtomicExpresso/movie-app",
+      "PreviewLink": "https://moviebox-nextjs-sooty.vercel.app/",
+      "features": [
+        {
+          "title": "Movies & Shows page",
+          "description": "Page's displaying a list of movies and shows seperated by different genere's, such as Action, Animation, Documentery, Etc."
+        },
+        {
+          "title": "Discover page",
+          "description": "Use's pagination and allows you to explore many diffrent movie titles and shows, also has a search bar to find a specific film"
+        },
+        {
+          "title": "Settings menu",
+          "description": "The settings menu allows you to change the websites theme and filter out specific content. Changes are saved in localstorage and load when ever you visit the website again"
+        },
+        {
+          "title": "Data & film info",
+          "description": "Each movie and show displays various metrics showing, the rating, cast, description, run time, etc. Addittionaly, it will also display similar films and shows to the one your currently viewing."
+        },
+        {
+          "title": "show info",
+          "description": "For shows, you can view a list of seasons and episodes with information about each episode"
+        },
+        {
+          "title": "Mobile support and responsive design",
+          "description": "The project was built with resposnvie design ensuring flexability accross different devices"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Personal Website",
+      "poster_path": "PersonalWebsiteTn",
+      "previewDesc": "My portfoilo and Personal website, it has my projects and blog",
+      "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
+      "description": "A concept streaming platform built using Nextjs, Typescript, Scss, and Bootstrap. Uses the TMDB API for film data",
+      "ProjectLink": "project/3",
+      "SourceLink": "https://github.com/AtomicExpresso/developer-portfolio",
+      "PreviewLink": "/",
+      "features": [
+        {
+          "title": "Responsive design",
+          "description": "Website was built with responsive design in mind, ensuring support accross different devices"
+        },
+        {
+          "title": "Dynamic blog page's with markdown",
+          "description": "Dynamic pages that use's the Gray matter package to support markdown"
+        },
+        {
+          "title": "Detailed Project's, Contact and About page",
+          "description": "Website contains detailed information about various projects ive worked on, as well as a few other pages."
+        },
+        {
+          "title": "Server Side rendering & SEO",
+          "description": "uses Nextjs to support SSR as well as other features and uses SEO best practices"
+        }
+      ]
+    }
+  ]
+}

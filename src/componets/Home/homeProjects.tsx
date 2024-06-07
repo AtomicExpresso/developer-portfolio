@@ -3,7 +3,8 @@ import ProjectIcon from '../../assets/images/icons/decor/paintbrush-solid.svg';
 import TwitterThumbnail from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteThumbnail from '../../assets/images/thumbnails/personal-website.webp';
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
-import projectInfo from '../../../public/projectInfo.json';
+import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
+import projectInfo from '../../../public/projectItemContent.json';
 import Image from 'next/image';
 
 function GrabImage(ImageName: string){
@@ -13,6 +14,9 @@ function GrabImage(ImageName: string){
     break;
     case "Personal Website":
       return PersonalWebsiteThumbnail;
+    break;
+    case "MovieBox":
+      return MovieBoxTn;
     break;
     case "Personal Website":
       return PersonalWebsiteThumbnail;
@@ -27,14 +31,21 @@ function GrabImage(ImageName: string){
 }
 
 function HomeProjects(){
-  const BuildProject = projectInfo.projects.map(item => {
+  //Only include the first 3 elements from project info
+  const newArr = [...projectInfo.results].slice(0, 3)
+
+  const BuildProject = newArr.map(item => {
     return (
-      <div key={item.id} className={`project-item project-item-${item.id}`} data-front-content={item.Heading} data-back-content={item.Desc}>
-      <div className="project-front" draggable='false'><Image alt={item.Heading} src={GrabImage(item.Heading)}></Image></div>
+      <div key={item.id} className={`project-item project-item-${item.id}`} data-front-content={item.name} data-back-content={item.previewDesc}>
+      <div className="project-front" draggable='false'>
+        <Image alt={item.name} src={GrabImage(item.name)}></Image>
+      </div>
       <div className="project-back">
-        <h1>{item.Heading}</h1>
-        {item.Desc}
-        <a href={`${item.PreviewLink}`}><button className="btn btn-primary">View Project</button></a>
+        <h1>{item.name}</h1>
+        {item.previewDesc}
+        <a href={`${item.ProjectLink}`}>
+          <button className="btn btn-primary">View Project</button>
+        </a>
       </div>
     </div>
     )
