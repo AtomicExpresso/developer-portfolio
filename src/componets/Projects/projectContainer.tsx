@@ -7,6 +7,7 @@ import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
 import Image from 'next/image';
 
 import projectInfo from '../../../public/projectItemContent.json'
+import Link from 'next/link';
 
 function GrabImg(Img: string){
   switch(Img){
@@ -37,9 +38,9 @@ function ProjectContainer(){
         <h2>{item.Lang}</h2>
         <p>{item.previewDesc}</p>
         <div className='project-item-btn'>
-          <a href={item.ProjectLink}>
+          <Link href={`/project/${item.ProjectLink}`} as={`/project/${item.ProjectLink}`}>
             <button className="btn btn-primary">View</button>
-          </a>
+          </Link>
         </div>
       </div>
     )
