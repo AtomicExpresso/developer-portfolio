@@ -38,7 +38,7 @@ function ProjectContainer(){
         <h2>{item.Lang}</h2>
         <p>{item.previewDesc}</p>
         <div className='project-item-btn'>
-          <Link href={`/project/${item.ProjectLink}`} as={`/project/${item.ProjectLink}`}>
+          <Link href={`/${item.ProjectLink}`} as={`/${item.ProjectLink}`}>
             <button className="btn btn-primary">View</button>
           </Link>
         </div>
