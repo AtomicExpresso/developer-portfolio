@@ -39,9 +39,9 @@ export default function ProjectContent({results}: {results: ResultsType}){
             <div>
               <h2>⚙️Features</h2>
               <hr></hr>
-              {results.features.map(item => {
+              {results.features.map((item, index) => {
                 return (
-                  <div className="item-project-feature">
+                  <div className="item-project-feature" key={index}>
                     <h3>- {item.title}</h3>
                     <p>{item.description}</p>
                   </div>
