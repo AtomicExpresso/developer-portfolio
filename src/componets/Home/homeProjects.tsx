@@ -5,6 +5,7 @@ import PersonalWebsiteThumbnail from '../../assets/images/thumbnails/personal-we
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
 import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
 import projectInfo from '../../../public/projectItemContent.json';
+import Link from 'next/link';
 import Image from 'next/image';
 
 function GrabImage(ImageName: string){
@@ -43,9 +44,9 @@ function HomeProjects(){
       <div className="project-back">
         <h1>{item.name}</h1>
         {item.previewDesc}
-        <a href={`${item.ProjectLink}`}>
-          <button className="btn btn-primary">View Project</button>
-        </a>
+        <Link href={`/${item.ProjectLink}`} as={`/${item.ProjectLink}`}>
+            <button className="btn btn-primary">View</button>
+        </Link>
       </div>
     </div>
     )
