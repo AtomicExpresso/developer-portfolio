@@ -7,7 +7,7 @@
       "previewDesc": "Its a front-end twitter clone built in React. Also was my first React project",
       "Lang": "React • CSS3 • Bootstrap",
       "description": "A twitter clone",
-      "ProjectLink": "project/0",
+      "ProjectLink": "0",
       "SourceLink": "https://github.com/AtomicExpresso/twitter-clone",
       "PreviewLink": "https://react-frontend-twitter-clone.netlify.app/",
       "features": [
@@ -24,7 +24,7 @@
       "previewDesc": "A front-end e-comerance website built with React. Has a add to cart feature, plus a few others",
       "Lang": "React • Sass • Bootstrap",
       "description": "An Ecomerance project built with vanillia js, react and bootstrap.",
-      "ProjectLink": "project/1",
+      "ProjectLink": "1",
       "SourceLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
       "PreviewLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
       "features": [
@@ -41,7 +41,7 @@
       "previewDesc": "A fully responsive concept streaming platform, featuring detailed info about shows and movies",
       "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
       "description": "A concept streaming platform built using Nextjs, Typescript, Scss, and Bootstrap. Uses the TMDB API for film data",
-      "ProjectLink": "project/2",
+      "ProjectLink": "2",
       "SourceLink": "https://github.com/AtomicExpresso/movie-app",
       "PreviewLink": "https://moviebox-nextjs-sooty.vercel.app/",
       "features": [
@@ -78,7 +78,7 @@
       "previewDesc": "My portfoilo and Personal website, it has my projects and blog",
       "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
       "description": "A concept streaming platform built using Nextjs, Typescript, Scss, and Bootstrap. Uses the TMDB API for film data",
-      "ProjectLink": "project/3",
+      "ProjectLink": "3",
       "SourceLink": "https://github.com/AtomicExpresso/developer-portfolio",
       "PreviewLink": "/",
       "features": [
