@@ -44,7 +44,7 @@ function HomeProjects(){
       <div className="project-back">
         <h1>{item.name}</h1>
         {item.previewDesc}
-        <Link href={`/project/[item]`} as={`/project/${item.ProjectLink}`}>
+        <Link href={`/project/[id]`} as={`/project/${item.ProjectLink}`}>
             <button className="btn btn-primary">View</button>
         </Link>
       </div>
