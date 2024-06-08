@@ -13,7 +13,7 @@ type AllPostsData = {
 }[]
 
 export const metadata = {
-  title: "hi",
+  title: "A list of blog articles i wrote",
 }
 
 export default function BlogList() {

@@ -1,38 +1,12 @@
 'use client'
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import projectItemContent from '../../../public/projectItemContent.json';
 
 import ProjectTitle from "./projectTitle";
 import ProjectContent from "./projectContent";
-import ProjectShowcase from "./projectShowcase";
 
-import TwitterCloneTn from '@/assets/images/thumbnails/twitter-clone.webp';
-import PersonalWebsiteThumbnail from '../../assets/images/thumbnails/personal-website.webp';
-import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
-import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
-
-function GrabImage(ImageName: string){
-  switch(ImageName){
-    case "Twitter Clone":
-      return TwitterCloneTn;
-    break;
-    case "Personal Website":
-      return PersonalWebsiteThumbnail;
-    break;
-    case "MovieBox":
-      return MovieBoxTn;
-    break;
-    case "Personal Website":
-      return PersonalWebsiteThumbnail;
-    break;
-    case "E-comerance website":
-      return EconmProjectTn;
-    break;
-    default:
-      return MovieBoxTn;
-    break;
-  }
+export const metadata = {
+  title: "A list of projects",
 }
 
 export default function ProjectComp(){
