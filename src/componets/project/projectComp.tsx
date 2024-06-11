@@ -4,6 +4,7 @@ import projectItemContent from '../../../public/projectItemContent.json';
 
 import ProjectTitle from "./projectTitle";
 import ProjectContent from "./projectContent";
+import ProjectShowcase from "./projectShowcase";
 
 export const metadata = {
   title: "A list of projects",
@@ -19,6 +20,7 @@ export default function ProjectComp(){
       <ProjectTitle results={results}/>
       <hr></hr>
       <ProjectContent results={results}/>
+      <ProjectShowcase results={results}/>
     </div>
   )
 }

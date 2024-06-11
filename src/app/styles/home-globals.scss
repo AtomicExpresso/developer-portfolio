@@ -27,6 +27,7 @@
   flex-direction: column;
   justify-content: center;
   background-image: url(../../assets/images/backgrounds/hero-background.webp);
+  backdrop-filter: brightness(99);
   background-size: cover;
   background-attachment: fixed;
 }

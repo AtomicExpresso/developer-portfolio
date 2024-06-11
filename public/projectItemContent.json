@@ -6,7 +6,11 @@
       "poster_path": "twitter-clone.webp",
       "previewDesc": "Its a front-end twitter clone built in React. Also was my first React project",
       "Lang": "React • CSS3 • Bootstrap",
-      "description": "A twitter clone",
+      "description": [
+        {
+          "para": "A twitter clone"
+        }
+      ],
       "ProjectLink": "0",
       "SourceLink": "https://github.com/AtomicExpresso/twitter-clone",
       "PreviewLink": "https://react-frontend-twitter-clone.netlify.app/",
@@ -23,7 +27,11 @@
       "poster_path": "EcomTn",
       "previewDesc": "A front-end e-comerance website built with React. Has a add to cart feature, plus a few others",
       "Lang": "React • Sass • Bootstrap",
-      "description": "An Ecomerance project built with vanillia js, react and bootstrap.",
+      "description": [
+        {
+          "para": "An Ecomerance project built with vanillia js, react and bootstrap."
+        }
+      ],
       "ProjectLink": "1",
       "SourceLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
       "PreviewLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
@@ -40,7 +48,17 @@
       "poster_path": "MovieBoxTn",
       "previewDesc": "A fully responsive concept streaming platform, featuring detailed info about shows and movies",
       "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
-      "description": "A concept streaming platform built using Nextjs, Typescript, Scss, and Bootstrap. Uses the TMDB API for film data",
+      "description": [
+        {
+          "para": "A feature-rich concept streaming platform, inspired by popular movie streaming services like Netflix and Hulu. This project was developed using Next.js, TypeScript, SASS, and Bootstrap. Next.js leverages the App Router for efficient navigation, improved SEO, and server-side rendering (SSR) for faster page loads. TypeScript ensures code maintainability and type safety, while SCSS provides more organized CSS styles. Bootstrap is used for its pre-defined styles, enabling a responsive and visually appealing design."
+        },
+        {
+          "para": "The platform integrates with the TMDB (The Movie Database) API to access a vast repository of film data, including movie details, cast information, trailers, and reviews. This integration enables the platform to offer users a comprehensive and up-to-date library of movies and TV shows. Users can search for their favorite films, explore curated lists, discover new movies, and change various settings"
+        },
+        {
+          "para": "In addittion, The UI/UX is designed to be unique and intuitive, with a focus on easy navigation and accessibility, with support for both light and dark mode themes."
+        }
+      ],
       "ProjectLink": "2",
       "SourceLink": "https://github.com/AtomicExpresso/movie-app",
       "PreviewLink": "https://moviebox-nextjs-sooty.vercel.app/",
@@ -77,7 +95,11 @@
       "poster_path": "PersonalWebsiteTn",
       "previewDesc": "My portfoilo and Personal website, it has my projects and blog",
       "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
-      "description": "A concept streaming platform built using Nextjs, Typescript, Scss, and Bootstrap. Uses the TMDB API for film data",
+      "description": [
+        {
+          "para": "My personal website and developer porfiolo"
+        }
+      ],
       "ProjectLink": "3",
       "SourceLink": "https://github.com/AtomicExpresso/developer-portfolio",
       "PreviewLink": "/",

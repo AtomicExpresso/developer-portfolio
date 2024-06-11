@@ -6,7 +6,7 @@ export default function ProjectShowcase({results}: {results: ResultsType}) {
       <h1>🍿Showcase</h1>
       <hr></hr>
       <div className="showcase">
-          
+        <p>Coming soon</p>
       </div>
   </div>
   )

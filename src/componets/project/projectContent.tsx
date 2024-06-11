@@ -32,7 +32,13 @@ export default function ProjectContent({results}: {results: ResultsType}){
             <div>
               <h2>📝Description</h2>
               <hr></hr>
-              <p>{results.description}</p>
+              {results.description.map((desc, index) => {
+                return (
+                  <div key={index}>
+                    <p>{desc.para}</p>
+                  </div>
+                )
+              })}
             </div>
           : null}
           {tabs === 'features' ? 

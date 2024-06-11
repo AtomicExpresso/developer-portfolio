@@ -57,6 +57,7 @@ h1 {
   top: 0;
   background-color: $--header-text-color-third;
   width: 100%;
+  height: 60px;
   z-index: 500;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
@@ -97,7 +98,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 20px;
+    margin: 15px 20px;
   }
 
   & a:not(.nav-title) {
@@ -448,8 +449,13 @@ h1 {
     }
   }
 
-  & .about-content{
+  & .about-content, 
+  .item-project-container{
     background-color: #272727;
+  }
+
+  .item-project-tabs-container{
+    background-color: #313131;
   }
 
   & .contact-me-container{
@@ -501,6 +507,12 @@ h1 {
 //Media Quarys
 
 @media (max-width:960px) {
+  .hero-col-1{
+    p {
+      display: none;
+    }
+  }
+
   .hero-col-2{
     & img{
       display: none;
