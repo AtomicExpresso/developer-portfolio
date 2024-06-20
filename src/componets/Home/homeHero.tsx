@@ -18,7 +18,7 @@ function HomeHero() {
           <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
             <h2>I&apos;m a</h2>
             <h2>
-              <ReactTyped strings={["Front-end developer", "UI/UX Designer"]} typeSpeed={100} backSpeed={50} loop />
+              <ReactTyped strings={["Front-end developer", "UI/UX Designer", "Web designer","Website developer"]} typeSpeed={100} backSpeed={50} loop />
             </h2>
           </div>
           <p>front-end developer, dedicated to transforming innovative concepts into functional and user-friendly web applications</p>

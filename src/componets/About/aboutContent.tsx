@@ -9,7 +9,7 @@ const Paragraphs = [
   },
   {
     id: 2,
-    Para: "I'm 20 years old and currently majoring in computer science. I've spent countless hours diving into web development and programming, using a variety of frame works, libaires, and languages. I mostly work with front-end development using tools like React, Bootstrap, Nextjs, Scss, etc. I'm always eager to expand my skills and tackle new challenges head-on."
+    Para: "I'm a 20 year old university student. I've spent countless hours diving into web development and programming, using a variety of frame works, libaires, and languages. I mostly work with front-end development using tools like React, Bootstrap, Nextjs, Scss, etc. I'm always eager to expand my skills and tackle new challenges head-on."
   },
   {
     id: 3,
