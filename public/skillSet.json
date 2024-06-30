@@ -27,8 +27,8 @@
 },
 {
   "id": 6,
-  "itemName": "Tauri",
-  "img": "TauriBar"
+  "itemName": "Node",
+  "img": "Nodejs"
 },
 {
   "id": 7,
@@ -66,6 +66,14 @@
 {
   "id": 14,
   "itemName": "UI/UX Design"
+},
+{
+  "id": 15,
+  "itemName": "Expressjs"
+},
+{
+  "id": 16,
+  "itemName": "Mongo DB"
 }
 ]
 }

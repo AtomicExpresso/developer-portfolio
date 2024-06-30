@@ -11,7 +11,7 @@ function Footer(){
       <div className="footer-content">
         <div className="footer-col-2">
           <h2>Pumped Pixel</h2>
-          <p>a dedicated front-end developer with a drive for turning innovative ideas into reality</p>
+          <p>a dedicated full-stack developer with a drive for turning innovative ideas into reality</p>
         </div>
         <div className="footer-col-2">
           <h2>Socials</h2>

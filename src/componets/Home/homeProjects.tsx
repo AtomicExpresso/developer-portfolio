@@ -1,8 +1,6 @@
 import React from 'react'
 import ProjectIcon from '../../assets/images/icons/decor/paintbrush-solid.svg';
-import TwitterThumbnail from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteThumbnail from '../../assets/images/thumbnails/personal-website.webp';
-import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
 import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
 import projectInfo from '../../../public/projectItemContent.json';
 import Link from 'next/link';
@@ -10,9 +8,6 @@ import Image from 'next/image';
 
 function GrabImage(ImageName: string){
   switch(ImageName){
-    case "Twitter Clone":
-      return TwitterThumbnail;
-    break;
     case "Personal Website":
       return PersonalWebsiteThumbnail;
     break;
@@ -22,11 +17,8 @@ function GrabImage(ImageName: string){
     case "Personal Website":
       return PersonalWebsiteThumbnail;
     break;
-    case "E-comerance website":
-      return EconmProjectTn;
-    break;
     default:
-      return TwitterThumbnail;
+      return MovieBoxTn;
     break;
   }
 }

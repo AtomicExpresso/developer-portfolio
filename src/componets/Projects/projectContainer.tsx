@@ -1,5 +1,4 @@
 import React from 'react'
-import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
 import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
@@ -11,20 +10,14 @@ import Link from 'next/link';
 
 function GrabImg(Img: string){
   switch(Img){
-    case "Twitter Clone":
-      return TwitterCloneTn;
-    break;
     case "Personal Website":
       return PersonalWebsiteTn;
-    break;
-    case "E-comerance website":
-      return EconmProjectTn;
     break;
     case "MovieBox":
       return MovieBoxTn;
     break;
     default:
-      return TwitterCloneTn;
+      return MovieBoxTn;
     break;
   }
 }
