@@ -6,9 +6,7 @@ export interface ResultsType {
   SourceLink: string;
   ProjectLink: string;
   previewDesc: string;
-  description: {
-    "para": string
-  }[];
+  description: string[];
   poster_path: string;
   features: {
     title: string;

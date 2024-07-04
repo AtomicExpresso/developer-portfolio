@@ -1,9 +1,8 @@
 'use client'
 import { useState } from "react"
 import { ResultsType } from "@/typeings/types"
-import { redirect } from "next/dist/server/api-utils";
 
-export default function ProjectContent({results}: {results: any}){
+export default function ProjectContent({results}: {results: ResultsType}){
   const [tabs, setTabs] = useState('description');
   const [readMore, setReadMore] = useState(false)
 
@@ -49,9 +48,9 @@ export default function ProjectContent({results}: {results: any}){
                   <div>
                     {readMore ?
                       <div>
-                        {results.description[0].split("|").map((paragragh: string) => { // "|" represents the end of a paragraph in the json description string
+                        {results.description[0].split("|").map((paragragh: string, index: number) => { // "|" represents the end of a paragraph in the json description string
                           return (
-                            <p>{paragragh}</p>
+                            <p key={index}>{paragragh}</p>
                           )
                         })
                         }
@@ -81,7 +80,7 @@ export default function ProjectContent({results}: {results: any}){
             <div>
               <h2>⚙️Features</h2>
               <hr></hr>
-              {results.features.map((item, index) => {
+              {results.features.map((item: any, index: number) => {
                 return (
                   <div className="item-project-feature" key={index}>
                     <h3>- {item.title}</h3>
