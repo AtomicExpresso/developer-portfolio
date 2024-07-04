@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import twittericon from '@/assets/images/icons/functionalIcon/twitter.svg';
 import linkicon from '@/assets/images/icons/functionalIcon/link-solid.svg';
@@ -9,7 +9,23 @@ import facebookicon from '@/assets/images/icons/functionalIcon/facebook-icon.svg
 
 
 export default function BlogShareBtn() {
-  const [blogpopup, setBlogPopup] = useState(false)
+  const [blogpopup, setBlogPopup] = useState(false);
+  const popupRef = useRef<any>(null);
+
+  //Handles when user clicks outside share blog div
+  function handleOutsideClick() {
+    if(popupRef.current && !popupRef.current.contains(event?.target)){
+      setBlogPopup(false)
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick)
+
+    return(() => {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    })
+  }, [])
 
   function BlogPopup(){
     setBlogPopup(prevState => !prevState)
@@ -48,8 +64,10 @@ export default function BlogShareBtn() {
   }
 
   return (
-    <div className="blog-share-btn">
-      <button id="blog-share-btn" onClick={BlogPopup} style={{scale: blogpopup ? 0.93 : 1}}><Image src={shareicon} alt="share this page" width={22} height={22}></Image></button>
+    <div className="blog-share-btn" ref={popupRef}>
+      <button id="blog-share-btn" onClick={BlogPopup} style={{scale: blogpopup ? 0.93 : 1}}>
+        <Image src={shareicon} alt="share this page" width={22} height={22}></Image>
+      </button>
       {blogpopup &&
         <div className="blog-share-popup">
           <SocialBtnConstructor props={{name: "twitter", icon: twittericon, clickType: TweetUrl}}/>

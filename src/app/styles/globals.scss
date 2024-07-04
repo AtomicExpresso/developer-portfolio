@@ -33,6 +33,11 @@ $text-rendering: optimizeLegibility;
 $-webkit-font-smoothing: antialiased;
 $-moz-osx-font-smoothing: grayscale;
 
+
+:root .dark-mode-nighttime{
+  scrollbar-color: #3A86FF rgb(46,54,69) !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -598,6 +603,12 @@ h1 {
     }
   }
 
+  .blog-page-title{
+    h1 {
+      font-size: 35px;
+    }
+  }
+
   .blog-post-content{
     display: flex;
     flex-direction: column;
@@ -609,5 +620,18 @@ h1 {
   .blog-share-popup{
     position: absolute;
     right: 10px;
+  }
+
+  .item-project-container{
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  .project-page-tech-stack{
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
 }

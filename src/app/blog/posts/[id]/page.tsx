@@ -45,7 +45,9 @@ export default async function BlogPage({ params }: { params: Params }) {
     <div>
       <BlogHero />
       <div className="blog-page-content">
-        <h1>{postData.title}</h1>
+        <div className='blog-page-title'>
+          <h1>{postData.title}</h1>
+        </div>
         <div className="blog-page-info">
           <h3>{postData.author}</h3>
           <h3>•</h3>

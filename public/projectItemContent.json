@@ -7,15 +7,7 @@
       "previewDesc": "A fully responsive concept streaming platform, featuring detailed info about shows and movies",
       "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
       "description": [
-        {
-          "para": "A feature-rich concept streaming platform, inspired by popular movie streaming services like Netflix and Hulu. This project was developed using Next.js, TypeScript, SASS, and Bootstrap. Next.js leverages the App Router for efficient navigation, improved SEO, and server-side rendering (SSR) for faster page loads. TypeScript ensures code maintainability and type safety, while SCSS provides more organized CSS styles. Bootstrap is used for its pre-defined styles, enabling a responsive and visually appealing design."
-        },
-        {
-          "para": "The platform integrates with the TMDB (The Movie Database) API to access a vast repository of film data, including movie details, cast information, trailers, and reviews. This integration enables the platform to offer users a comprehensive and up-to-date library of movies and TV shows. Users can search for their favorite films, explore curated lists, discover new movies, and change various settings"
-        },
-        {
-          "para": "In addittion, The UI/UX is designed to be unique and intuitive, with a focus on easy navigation and accessibility, with support for both light and dark mode themes."
-        }
+          "A feature-rich concept streaming platform, inspired by popular movie streaming services like Netflix and Hulu. This project was developed using Next.js, TypeScript, SASS, and Bootstrap. Next.js leverages the App Router for efficient navigation, improved SEO, and server-side rendering (SSR) for faster page loads. TypeScript ensures code maintainability and type safety, while SCSS provides more organized CSS styles. Bootstrap is used for its pre-defined styles. | The platform integrates with the TMDB (The Movie Database) API to access a vast repository of film data, including movie details, cast information, trailers, and reviews. This integration enables the platform to offer users a comprehensive and up-to-date library of movies and TV shows. Users can search for their favorite films, explore curated lists, discover new movies, and change various settings. | In addittion, The UI/UX is designed to be unique and intuitive, with a focus on easy navigation and accessibility, with support for both light and dark mode themes."
       ],
       "ProjectLink": "0",
       "SourceLink": "https://github.com/AtomicExpresso/movie-app",
@@ -54,9 +46,7 @@
       "previewDesc": "My portfoilo and Personal website, it has my projects and blog",
       "Lang": "React • TypeScript • Nextjs • Sass • Bootstrap",
       "description": [
-        {
-          "para": "My personal website and developer porfiolo"
-        }
+        "My personal website and developer porfiolo"
       ],
       "ProjectLink": "1",
       "SourceLink": "https://github.com/AtomicExpresso/developer-portfolio",
