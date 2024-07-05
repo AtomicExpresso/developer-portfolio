@@ -11,3 +11,6 @@
 - Contact and About page
 - Animated dark mode toggle, supports both light and dark mode
 - Server side rendering using Nextjs
+
+##
+<p align="center">Be sure to 🌟the repo if you found this project useful or helpful</p>
