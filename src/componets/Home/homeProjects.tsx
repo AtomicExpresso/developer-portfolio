@@ -30,19 +30,28 @@ function HomeProjects(){
   const BuildProject = newArr.map(item => {
     return (
       <div key={item.id} className={`project-item project-item-${item.id}`} data-front-content={item.name} data-back-content={item.previewDesc}>
-      <div className="project-front" draggable='false'>
-        <Image alt={item.name} src={GrabImage(item.name)}></Image>
-      </div>
-      <div className="project-back">
-        <h1>{item.name}</h1>
-        {item.previewDesc}
-        <Link href={`/project/[id]`} as={`/project/${item.ProjectLink}`}>
-            <button className="btn btn-primary">View</button>
-        </Link>
-      </div>
+        <div className="project-front" draggable='false'>
+          <Image alt={item.name} src={GrabImage(item.name)}></Image>
+        </div>
+        <div className="project-back">
+          <h1>{item.name}</h1>
+          {item.previewDesc}
+          <Link href={`/project/[id]`} as={`/project/${item.ProjectLink}`}>
+              <button className="btn btn-primary">View</button>
+          </Link>
+        </div>
     </div>
     )
   })
+
+  const BuildGithubStats = ({title, numbers, index}: {title: string, numbers: number, index: number}) => {
+    return (
+      <div key={index} className='home-github-stats-item' id={`home-github-stats-item-${index}`}>
+        <h2>{title}</h2>
+        <h3>{numbers}</h3>
+      </div>
+    )
+  }
 
   return (
     <div className="home-projects">

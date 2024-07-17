@@ -10,7 +10,7 @@ function Footer(){
     <div className="footer">
       <div className="footer-content">
         <div className="footer-col-2">
-          <h2>Pumped Pixel</h2>
+          <h2>Pumped</h2>
           <p>a dedicated full-stack developer with a drive for turning innovative ideas into reality</p>
         </div>
         <div className="footer-col-2">
@@ -25,7 +25,7 @@ function Footer(){
         </div>
         <hr></hr>
         <div className="footer-row-2">
-          <p>© Copyright 2023 | Made by <span><a href='https://github.com/AtomicExpresso'>Pumpedpixel</a></span></p>
+          <p>© Copyright 2023 | Made by <span><a href='https://github.com/AtomicExpresso'>Pumped</a></span></p>
         </div>
     </div>
   )

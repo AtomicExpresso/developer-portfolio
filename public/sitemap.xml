@@ -31,22 +31,17 @@
     <priority>0.1</priority>
   </url>
   <url>
+    <loc>https://www.pumped.dev/blog/posts/understanding-mvc-mern</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
     <loc>https://www.pumped.dev/project/0</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://www.pumped.dev/project/1</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://www.pumped.dev/project/2</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://www.pumped.dev/project/3</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>

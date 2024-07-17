@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Paragraphs = [
   {
     id: 1,
-    Para: '👋 Hello there! Im Pumped Pixel, a dedicated full-stack developer with a love for turning innovative ideas into reality. i am constantly seeking new challenges and opportunities to expand my skills'
+    Para: '👋 Hello there! Im Pumped, a dedicated full-stack developer with a love for turning innovative ideas into reality. i am constantly seeking new challenges and opportunities to expand my skills'
   },
   {
     id: 2,
