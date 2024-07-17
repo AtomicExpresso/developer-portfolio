@@ -8,9 +8,9 @@ import Image from 'next/image';
 import projectInfo from '../../../public/projectItemContent.json'
 import Link from 'next/link';
 
-function GrabImg(Img: string){
+function GrabImage(Img: string){
   switch(Img){
-    case "Personal Website":
+    case "PersonalWebsiteTn":
       return PersonalWebsiteTn;
     break;
     case "MovieBox":
@@ -23,25 +23,40 @@ function GrabImg(Img: string){
 }
 
 function ProjectContainer(){
-  const ConstructProjectItem = projectInfo.results.map((item, index) => {
+  const ConstructProjectItem = ({project}: any) => {
     return (
-      <div className="project-page-item" key={index}>
-        <Image src={GrabImg(item.name)} draggable='false' alt={`${item.name}`}></Image>
-        <h1>{item.name}</h1>
-        <h2>{item.Lang}</h2>
-        <p>{item.previewDesc}</p>
-        <div className='project-item-btn'>
-          <Link href={`/project/[id]`} as={`/project/${item.ProjectLink}`}>
-            <button className="btn btn-primary">View</button>
-          </Link>
-        </div>
+      <div className="project-page-item">
+      <Image src={GrabImage(project.poster_path)} draggable='false' alt={`${project.name}`}></Image>
+      <h1>{project.name}</h1>
+      <div className='home-project-item-techstack'>
+        {project.Lang.split(" • ").map((item: any, index: number) => {
+            return (
+              <div key={index} className='home-project-item-skill'>
+                <h2>{item}</h2>
+              </div>
+            )
+          })
+        }
       </div>
+      <p>{project.previewDesc}</p>
+      <div className='project-item-btn'>
+        <Link href={`/project/[id]`} as={`/project/${project.ProjectLink}`}>
+          <button className="btn btn-primary">View</button>
+        </Link>
+      </div>
+    </div>
     )
-  })
+  }
 
   return (
     <div className="project-container">
-      {ConstructProjectItem}
+      {projectInfo.results.map((project, index) => {
+        return (
+          <div key={index}>
+            <ConstructProjectItem project={project}/>
+          </div>
+        )
+      })}
     </div>
   )
 }

@@ -16,7 +16,7 @@ function Footer(){
         <div className="footer-col-2">
           <h2>Socials</h2>
           <div className="footer-social-links">
-           <a href='https://twitter.com/pumped212'><Image src={Twitter} alt='Twitter' draggable='false'></Image></a>
+           <a href='https://twitter.com/pumpeddev'><Image src={Twitter} alt='Twitter' draggable='false'></Image></a>
            <a href='#'><Image src={Youtube} alt='Youtube' draggable='false'></Image></a>
            <a href='#'><Image src={Instagram} alt='Instagram' draggable='false'></Image></a>
            <a href='#'><Image src={Discord} alt='Discord' draggable='false'></Image></a>

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ProjectIcon from '../../assets/images/icons/decor/paintbrush-solid.svg';
 import PersonalWebsiteThumbnail from '../../assets/images/thumbnails/personal-website.webp';
@@ -8,14 +10,11 @@ import Image from 'next/image';
 
 function GrabImage(ImageName: string){
   switch(ImageName){
-    case "Personal Website":
+    case "PersonalWebsiteTn":
       return PersonalWebsiteThumbnail;
     break;
     case "MovieBox":
       return MovieBoxTn;
-    break;
-    case "Personal Website":
-      return PersonalWebsiteThumbnail;
     break;
     default:
       return MovieBoxTn;
@@ -23,32 +22,40 @@ function GrabImage(ImageName: string){
   }
 }
 
+// {project.Lang.split(" • ").map((item: any, index: number) => {
+//   return (
+//     <div key={index} className='home-project-item-skill'>
+//       <h2>{item}</h2>
+//     </div>
+//   )
+// })
+// }
+
 function HomeProjects(){
   //Only include the first 3 elements from project info
-  const newArr = [...projectInfo.results].slice(0, 3)
+  const projectInfoArray = [...projectInfo.results].slice(0, 3)
 
-  const BuildProject = newArr.map(item => {
+  const BuildProject = ({project}: any) => {
     return (
-      <div key={item.id} className={`project-item project-item-${item.id}`} data-front-content={item.name} data-back-content={item.previewDesc}>
-        <div className="project-front" draggable='false'>
-          <Image alt={item.name} src={GrabImage(item.name)}></Image>
+      <div className="project-page-item">
+        <Image src={GrabImage(project.poster_path)} draggable='false' alt={`${project.name}`}></Image>
+        <h1>{project.name}</h1>
+        <div className='home-project-item-techstack'>
+          {project.Lang.split(" • ").map((item: any, index: number) => {
+              return (
+                <div key={index} className='home-project-item-skill'>
+                  <h2>{item}</h2>
+                </div>
+              )
+            })
+          }
         </div>
-        <div className="project-back">
-          <h1>{item.name}</h1>
-          {item.previewDesc}
-          <Link href={`/project/[id]`} as={`/project/${item.ProjectLink}`}>
-              <button className="btn btn-primary">View</button>
+        <p>{project.previewDesc}</p>
+        <div className='project-item-btn'>
+          <Link href={`/project/[id]`} as={`/project/${project.ProjectLink}`}>
+            <button className="btn btn-primary">View</button>
           </Link>
         </div>
-    </div>
-    )
-  })
-
-  const BuildGithubStats = ({title, numbers, index}: {title: string, numbers: number, index: number}) => {
-    return (
-      <div key={index} className='home-github-stats-item' id={`home-github-stats-item-${index}`}>
-        <h2>{title}</h2>
-        <h3>{numbers}</h3>
       </div>
     )
   }
@@ -62,7 +69,13 @@ function HomeProjects(){
       <p>Heres a list of my best projects ive developed and worked on</p>
       <hr></hr>
       <div className="project-list-container">
-        {BuildProject}
+        {projectInfoArray.map((project, index) => {
+          return (
+            <div key={index} className='home-project-item-outer-container'>
+              <BuildProject project={project}/>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
