@@ -82,3 +82,25 @@ $-moz-osx-font-smoothing: grayscale;
     text-align: center;
   }
 }
+
+.icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 55px auto;
+  max-width: 60%;
+}
+
+.icon-list img{
+  height: 32px;
+  width: 102px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover{
+    scale: 0.93;
+  }
+}

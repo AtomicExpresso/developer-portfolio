@@ -10,8 +10,9 @@
 
   $--header-text-color-clicked: #3477e3;
 
-  $--background-secondary-color: #ffc107;
+  $--background-secondary-color: #3a86ff;
   $--background-third-color: #484B45;
+  $--background-fourth-color: #ffff;
 
   $color-scheme: light dark;
   $color: rgba(255, 255, 255, 0.87);
@@ -99,6 +100,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 20px 0;
 
   & .info-title{
     display: flex;
@@ -118,40 +120,34 @@
     line-height: 1.5;
   }
 
-  & p {
-    max-width: 900px;
-  text-align: center;
-  color: $--para-text-color
-  }
-
-  & button {
-    margin: 30px auto; 
-  }
-
   & hr {
     width: 50%;
   }
 }
 
-.icon-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 55px auto;
-  max-width: 60%;
-}
-
-.icon-list img{
-  height: 32px;
-  width: 102px;
+.home-about-me-intro{
+  padding: 5px;
   border-radius: 10px;
-  transition: 0.3s;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
 
-  &:hover{
-    scale: 0.93;
+  p {
+    max-width: 80%;
+    color: $--para-text-color;
+    text-align: center
+  }
+
+  a {
+    width: 30%;
+  }
+
+  & button {
+    margin: 20px auto; 
+    width: 100%;
   }
 }
 
@@ -200,20 +196,23 @@
 }
 
 .skill-item{
-  background-color: $--background-third-color;
+  background-color: $--background-fourth-color;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0.3rem;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
+  border: solid transparent 2px;
 
   &:hover{
     scale: 0.93;
+    border: solid rgb(216, 216, 216) 2px;
   }
 
   & h1{
-    color: $--header-text-color-third;
+    color: $--header-text-color-secondary;
     font-size: 1rem;
+    margin: auto;
   }
 }
 
