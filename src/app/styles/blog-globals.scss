@@ -241,4 +241,22 @@ $-moz-osx-font-smoothing: grayscale;
       background-color: rgba(221, 221, 221, 0.342);
     }
   }
+
+  &#twitter{
+    img {
+      filter: brightness(0) saturate(100%) invert(61%) sepia(13%) saturate(2288%) hue-rotate(165deg) brightness(101%) contrast(94%);
+    }
+  }
+
+  &#facebook{
+    img{
+      filter: brightness(0) saturate(100%) invert(16%) sepia(80%) saturate(2153%) hue-rotate(185deg) brightness(99%) contrast(96%);
+    }
+  }
+
+  &#url{
+    img{
+      filter: brightness(0) saturate(100%) invert(35%) sepia(10%) saturate(3339%) hue-rotate(80deg) brightness(90%) contrast(87%);
+    }
+  }
 }

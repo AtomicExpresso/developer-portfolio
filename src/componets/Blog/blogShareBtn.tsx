@@ -54,7 +54,7 @@ export default function BlogShareBtn() {
   //Constructs the socialmedia buttons
   function SocialBtnConstructor({props}: {props: {name: string, icon: string, clickType: (event: React.MouseEvent<HTMLButtonElement>) => void}}){
     return (
-      <div className="btn-popup-share-item">
+      <div className="btn-popup-share-item" id={props.name}>
         <button onClick={props.clickType}>
           <Image src={props.icon} alt={props.name} width={22} height={22}></Image>
           <h1>{props.name}</h1>
@@ -70,9 +70,18 @@ export default function BlogShareBtn() {
       </button>
       {blogpopup &&
         <div className="blog-share-popup">
-          <SocialBtnConstructor props={{name: "twitter", icon: twittericon, clickType: TweetUrl}}/>
-          <SocialBtnConstructor props={{name: "facebook", icon:facebookicon, clickType: FacebookUrl}}/>
-          <SocialBtnConstructor props={{name: "url", icon:linkicon, clickType: CopyUrl}}/>
+          <SocialBtnConstructor props={{
+            name: "twitter", 
+            icon: twittericon, 
+            clickType: TweetUrl}}/>
+          <SocialBtnConstructor props={{
+            name: "facebook", 
+            icon:facebookicon, 
+            clickType: FacebookUrl}}/>
+          <SocialBtnConstructor props={{
+            name: "url", 
+            icon:linkicon, 
+            clickType: CopyUrl}}/>
         </div>
       }
     </div>

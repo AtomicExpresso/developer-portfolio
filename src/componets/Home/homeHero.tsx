@@ -24,12 +24,22 @@ function HomeHero() {
           <p>Full-stack developer, dedicated to transforming innovative concepts into functional and user-friendly web applications</p>
 
           <div className="hero-social-links">
-            <a href='https://twitter.com/pumpeddev'><Image src={Twitter} alt='Twitter' draggable='false'></Image></a>
-            <a href="#"><Image src={Youtube} alt='Youtube' draggable='false'></Image></a>
-            <a href="#"><Image src={Instagram} alt='Instagram' draggable='false'></Image></a>
-            <a href="#"><Image src={Discord} alt='Discord' draggable='false'></Image></a>
+            <a href='https://twitter.com/pumpeddev'>
+              <Image src={Twitter} alt='Twitter' draggable='false'></Image>
+            </a>
+            <a href="#">
+              <Image src={Youtube} alt='Youtube' draggable='false'></Image>
+            </a>
+            <a href="#">
+              <Image src={Instagram} alt='Instagram' draggable='false'></Image>
+            </a>
+            <a href="#">
+              <Image src={Discord} alt='Discord' draggable='false'></Image>
+            </a>
           </div>
-          <a href='/projects'><button className="btn btn-primary">View Projects</button></a>
+          <a href='/projects'>
+            <button className="btn btn-primary">View Projects</button>
+          </a>
         </div>
         <div className="hero-col-2">
           <Image src={ProfilePic} draggable='false' alt="Profile picture"></Image>

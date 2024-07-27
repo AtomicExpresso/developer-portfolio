@@ -51,6 +51,10 @@
     color: $--header-text-color;
     font-weight: 700;
     font-size: 40px;
+    & span{
+      font-family: 'hey-comic';
+      color: $--header-text-color-secondary;
+      }
   }
 
   & h2 {
