@@ -21,13 +21,15 @@ The view is responsible for displaying the data to the user. In the MERN stack, 
 ### Controller:
 The controller acts as an intermediary between the Model and the View. It receives requests from the view (typically in the form of, GET, POST, PATCH or DELETE requests) and updates both the View and Database accordingly. In the Mern stack, the controller is implemented using Express.js, a web application framework for Node.js. Express routes handle incoming requests and call the appropriate methods on the model to process data and respond to the client.
 
-In addition to the above, in the MERN stack it's also common practice to have a seperate file to handle your routes. Let’s explore a recommended structure:
+In addition to the above, in the MERN stack, it's also common practice to have a separate file to handle your routes. Routes designate which functions should be called in your controller file. For example, for the route 'api/user/login' we call the function accountLogin and for the route 'api/user/signup' we call the function accountSignup.
 
 **Server:** The server (or sometimes referred to as the backend) is a directory used to represent the backend of an application. This typically includes the Express server setup, route definitions, controllers, models, and any other backend logic.
 
 **Client:** The client or frontend is a directory used to represent the frontend of an application. The front end is responsible for the layout, and anything the user can see or interact with. In the MERN stack, the frontend is built using React.js.
 
-![folder-structure](https://res.cloudinary.com/practicaldev/image/fetch/s--D_Yr_6Ib--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aqcorrxj1etrgkt0xzzo.png)
+![folder-structure](https://github.com/AtomicExpresso/portfolio-v4-nextjs/blob/master/src/assets/images/blog-assets/backend-mv-design.png)
+
+Above is an example of the proper folder structure for MVC using the MERN stack. Here, we have seprate folders for handling different functions of the backend. The client (Also know as the View or Frontend) is handled by a seperate folder outside the backend directory
 
 ### Conclusion
 
