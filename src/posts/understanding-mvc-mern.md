@@ -6,7 +6,7 @@ tags: "MERN Stack"
 preview: "Outline for building fullstack applications following MVC architecture"
 ---
 
-When it comes to developing a web application (or any type of software), having a well structured architecture and clean code is essential to ensuring maintainable, scalable and robust applications. Fortunately, many engineers have devised architecture and design patterns that help achieve this goal.
+When it comes to developing a web application (or any type of software), having a well structured architecture and clean code is essential to ensuring maintainable, scalable and robust applications. Fortunately, many developers have devised architecture and design patterns that help achieve this goal.
 
 One of the most used architectural patterns in the industry is MVC, which stands for Model, View, Controller. It’s an architectural pattern that separates an application into three distinct components: the Model, the View, and the Controller
 
@@ -21,15 +21,17 @@ The view is responsible for displaying the data to the user. In the MERN stack, 
 ### Controller:
 The controller acts as an intermediary between the Model and the View. It receives requests from the view (typically in the form of, GET, POST, PATCH or DELETE requests) and updates both the View and Database accordingly. In the Mern stack, the controller is implemented using Express.js, a web application framework for Node.js. Express routes handle incoming requests and call the appropriate methods on the model to process data and respond to the client.
 
-In addition to the above, in the MERN stack, it's also common practice to have a separate file to handle your routes. Routes designate which functions should be called in your controller file. For example, for the route 'api/user/login' we call the function accountLogin and for the route 'api/user/signup' we call the function accountSignup.
+In addition to the above, in the MERN stack, it's also common practice to have a separate file to handle your routes. Routes designate which functions should be called in your controller file. For example, for the route 'api/user/login' we would call the function accountLogin and for the route 'api/user/signup' we would call the function accountSignup.
+
+### Folder structure
+
+![folder-structure](https://github.com/AtomicExpresso/developer-portfolio/blob/master/src/assets/images/blog-assets/backend-mv-design.png?raw=true)
+
+Above is an example of the proper folder structure for MVC using the MERN stack. Here, we have seprate folders for handling different functions of the backend. The client (Also know as the View or Frontend) is handled by a seperate folder outside the backend directory.
 
 **Server:** The server (or sometimes referred to as the backend) is a directory used to represent the backend of an application. This typically includes the Express server setup, route definitions, controllers, models, and any other backend logic.
 
 **Client:** The client or frontend is a directory used to represent the frontend of an application. The front end is responsible for the layout, and anything the user can see or interact with. In the MERN stack, the frontend is built using React.js.
-
-![folder-structure](https://github.com/AtomicExpresso/portfolio-v4-nextjs/blob/master/src/assets/images/blog-assets/backend-mv-design.png)
-
-Above is an example of the proper folder structure for MVC using the MERN stack. Here, we have seprate folders for handling different functions of the backend. The client (Also know as the View or Frontend) is handled by a seperate folder outside the backend directory
 
 ### Conclusion
 
