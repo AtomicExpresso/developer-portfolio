@@ -4,6 +4,7 @@ date: '07-04-2024'
 author: "Admin"
 tags: "MERN Stack"
 preview: "Outline for building fullstack applications following MVC architecture"
+thumbnail: "https://raw.githubusercontent.com/AtomicExpresso/developer-portfolio/master/src/assets/images/blog-assets/backend-mvc-design.webp"
 ---
 
 When it comes to developing a web application (or any type of software), having a well structured architecture and clean code is essential to ensuring maintainable, scalable and robust applications. Fortunately, many developers have devised architecture and design patterns that help achieve this goal.

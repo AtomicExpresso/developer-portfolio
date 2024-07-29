@@ -38,7 +38,7 @@ function HomeHero() {
             </a>
           </div>
           <a href='/projects'>
-            <button className="btn btn-primary">View Projects</button>
+            <button className="btn btn-light">View Projects</button>
           </a>
         </div>
         <div className="hero-col-2">

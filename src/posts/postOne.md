@@ -4,6 +4,7 @@ date: '04-15-2024'
 author: "Admin"
 tags: "Development"
 preview: "how I built my portfolio and my thought process behind it."
+thumbnail: "https://raw.githubusercontent.com/AtomicExpresso/developer-portfolio/master/src/assets/images/thumbnails/personal-website.webp"
 ---
 
 Developer portfolios are an excellent tool for making a lasting impression on potential clients or recruiters. In this article, I'll walk you through how I built my portfolio and my thought process behind it.

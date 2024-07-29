@@ -10,7 +10,7 @@
 
   $--header-text-color-clicked: #3477e3;
 
-  $--background-secondary-color: #3a86ff;
+  $--background-secondary-color: #0d6efd;
   $--background-third-color: #484B45;
   $--background-fourth-color: #ffff;
 
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../../assets/images/backgrounds/hero-background.webp);
+  background-image: linear-gradient(to top,#0051d6 0%,#0061ff 100%);
   backdrop-filter: brightness(99);
   background-size: cover;
   background-attachment: fixed;
@@ -47,22 +47,26 @@
   text-align: center;
   max-width: 700px;
 
+  p {
+    color: $--header-text-color-third
+  }
+
   & h1{
-    color: $--header-text-color;
+    color: $--header-text-color-third;
     font-weight: 700;
     font-size: 40px;
     & span{
       font-family: 'hey-comic';
-      color: $--header-text-color-secondary;
+      color: $--header-text-color-third;
       }
   }
 
   & h2 {
-    color: $--para-text-color;
+    color: $--header-text-color-third;
 
     & span{
     font-family: 'hey-comic';
-    color: $--header-text-color-secondary;
+    color: $--header-text-color-third;
     }
   }
 
@@ -77,6 +81,7 @@
 
 .hero-col-2 img{
   border-radius: 50%;
+  border: solid 5px white;
 }
 
 .hero-social-links {
@@ -87,7 +92,7 @@
   & img{
     width: 25px;
     height: 25px;
-    filter: brightness(0) saturate(100%) invert(33%) sepia(62%) saturate(6266%) hue-rotate(211deg) brightness(103%) contrast(98%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(207deg) brightness(106%) contrast(103%);
     cursor: pointer;
     transition: 0.3s;
 
