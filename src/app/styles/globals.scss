@@ -407,6 +407,12 @@ h1 {
     }
   }
 
+  & .hero-col-1 {
+    button {
+      color: black !important
+    }
+  }
+
   & .home-inner-content {
     background-color: #272727;
   }
@@ -523,6 +529,12 @@ h1 {
 
     h2 {
       color: white;
+    }
+  }
+
+  & .about-education-timeline-text{
+    div {
+      border: solid 1px white;
     }
   }
 }
@@ -737,6 +749,29 @@ h1 {
     h4 {
       font-size: 16px;
       font-weight: 400;
+    }
+  }
+
+  .about-education-timeline-text{
+    h1 {
+      font-size: 18px !important;
+    }
+    h3 {
+      font-size: 12px !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .education-achievment-card{
+    width: 100% !important;
+    h2 {
+      font-size: 13px !important;
+    }
+  }
+
+  .education-school-card{
+    h2{
+      display: none !important;
     }
   }
 }

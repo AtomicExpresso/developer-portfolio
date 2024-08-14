@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutHero from "../../componets/About/aboutHero";
 import AboutContent from "../../componets/About/aboutContent";
+import AboutEducation from '@/componets/About/aboutEducation';
 import { Metadata } from 'next';
 import '../styles/about-globals.scss'
 
@@ -14,6 +15,7 @@ function AboutPage() {
     <div>
       <AboutHero />
       <AboutContent />
+      <AboutEducation/>
     </div>
   )
 }
