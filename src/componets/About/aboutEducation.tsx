@@ -12,9 +12,9 @@ export default function AboutEducation(){
   const AcademicAchievement = (props: any) => {
     return (
       <div className="education-achievment-card">
-        {props.achievemnt.map((item: string) => {
+        {props.achievemnt.map((item: string, i: number) => {
           return (
-            <h2>{item}</h2>
+            <h2 key={i}>{item}</h2>
           )
         })
         }
@@ -56,8 +56,8 @@ export default function AboutEducation(){
           <div style={{background: 'none', boxShadow: 'none'}}></div>
           <SchoolCards
             name="Junior College"
-            startYr="Spring 2024"
-            endYr="Spring 2024"
+            startYr="2024"
+            endYr="2024"
             study="Studied web development"
           />
           <div style={{background: 'none', boxShadow: 'none'}}></div>
