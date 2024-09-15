@@ -14,7 +14,7 @@ function HomeHero() {
     <div className="hero-container">
       <div className='hero-group'>
         <div className="hero-col-1">
-          <h1>Hello 👋, I&apos;m <span>Pumped</span></h1>
+          <h1>Hi, I&apos;m <span>Pumped</span>👋</h1>
           <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
             <h2>I&apos;m a</h2>
             <h2>
@@ -37,9 +37,6 @@ function HomeHero() {
               <Image src={Discord} alt='Discord' draggable='false'></Image>
             </a>
           </div>
-          <a href='/projects'>
-            <button className="btn btn-light">View Projects</button>
-          </a>
         </div>
         <div className="hero-col-2">
           <Image src={ProfilePic} draggable='false' alt="Profile picture"></Image>

@@ -27,8 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to top,#0051d6 0%,#0061ff 100%);
-  backdrop-filter: brightness(99);
+  background: #0d6efd;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -92,12 +91,12 @@
   & img{
     width: 25px;
     height: 25px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(207deg) brightness(106%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(217deg) brightness(106%) contrast(102%);;
     cursor: pointer;
     transition: 0.3s;
 
   &:hover{
-    filter: brightness(0) saturate(100%) invert(21%) sepia(43%) saturate(5199%) hue-rotate(210deg) brightness(99%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(19%) saturate(1424%) hue-rotate(178deg) brightness(118%) contrast(91%);;
     scale: 0.90;
   }
 

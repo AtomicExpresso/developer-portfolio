@@ -47,7 +47,6 @@ function Navbar() {
   return (
       <div className="nav-bar">
       <div className="nav-row">
-        <a href="/" className="nav-title"><Image src={Logo} draggable='false' alt="Navigation logo"></Image></a>
         <a href="/" className="nav-title">{screenWidth ? <h1>Pumped</h1> : <h1>Pumped</h1>}</a>
       </div>
       <nav className="non-mobile-nav">
