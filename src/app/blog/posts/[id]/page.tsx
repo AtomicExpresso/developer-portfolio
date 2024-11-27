@@ -3,6 +3,10 @@ import BlogShareBtn from '@/componets/Blog/blogShareBtn';
 import '@/app/styles/blog-globals.scss';
 import { getPostData, getAllPostIds } from '@/lib/posts';
 import { Metadata } from 'next';
+import {rehype} from 'rehype';
+import rehypePrism from 'rehype-prism';
+import 'prismjs/components/prism-python';  // Import necessary PrismJS language components
+import 'prismjs/themes/prism.css'; 
 
 type Params = {
   id: string;
@@ -41,11 +45,19 @@ export async function generateStaticParams() {
 export default async function BlogPage({ params }: { params: Params }) {
   const postData = await fetchPostData(params.id);
 
+  // Process contentHtml with rehype-prism to apply syntax highlighting
+  const processedContent = await rehype()
+    .use(rehypePrism)  // Apply syntax highlighting
+    .process(postData.contentHtml);  // Process the contentHtml (which should be HTML)
+
+  // Get the processed HTML string
+  const contentWithHighlighting = String(processedContent);
+
   return (
     <div>
       <BlogHero />
       <div className="blog-page-content">
-        <div className='blog-page-title'>
+        <div className="blog-page-title">
           <h1>{postData.title}</h1>
         </div>
         <div className="blog-page-info">
@@ -63,7 +75,7 @@ export default async function BlogPage({ params }: { params: Params }) {
         <hr />
         <div
           className="blog-page-markdown"
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          dangerouslySetInnerHTML={{ __html: contentWithHighlighting }}  // Use the processed content with syntax highlighting
         ></div>
       </div>
     </div>
