@@ -2,6 +2,7 @@ import Image from "next/image";
 import ErrorImage from "@/assets/images/decorations/NotFound.webp";
 import Link from "next/link";
 
+//404 page when user goes to an invalid link
 export default function NotFound(){
   return (
     <div className="error-page">

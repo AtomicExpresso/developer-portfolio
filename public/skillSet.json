@@ -47,8 +47,8 @@
 },
 {
   "id": 10,
-  "itemName": "Vite",
-  "img": "ViteIcon"
+  "itemName": "Tkinter",
+  "img": "TkinterIcon"
 },
 {
   "id": 11,
@@ -69,7 +69,7 @@
 },
 {
   "id": 15,
-  "itemName": "Expressjs"
+  "itemName": "Python"
 },
 {
   "id": 16,

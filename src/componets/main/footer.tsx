@@ -5,12 +5,13 @@ import Instagram from '../../assets/images/icons/instagram.svg';
 import Discord from '../../assets/images/icons/discord.svg';
 import Image from 'next/image';
 
+//Appears at the bottom of the page
 function Footer(){
   return (
     <div className="footer">
       <div className="footer-content">
         <div className="footer-col-2">
-          <h2>Pumped</h2>
+          <h2>Liam</h2>
           <p>a dedicated full-stack developer with a drive for turning innovative ideas into reality</p>
         </div>
         <div className="footer-col-2">
@@ -25,7 +26,7 @@ function Footer(){
         </div>
         <hr></hr>
         <div className="footer-row-2">
-          <p>© Copyright 2023 | Made with ☕ by <span><a href='https://github.com/AtomicExpresso'>Pumped</a></span></p>
+          <p>© Copyright 2023 | Made with ☕ by <span><a href='https://github.com/AtomicExpresso'>Liam</a></span></p>
         </div>
     </div>
   )

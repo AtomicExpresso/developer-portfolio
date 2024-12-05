@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { ResultsType } from "@/typeings/types"
 
+//Fetchs info from json about the projects ive developed, will switch this to an MD style format eventually instead of relying on json docs. both are valid options but MD is easier to manage
 export default function ProjectContent({results}: {results: ResultsType}){
   
   return (

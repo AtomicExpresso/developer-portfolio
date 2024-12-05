@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { usePathname } from 'next/navigation';
 import ScreenWindowWidth from "./ScreenWidth";
-import Logo from '../../../public/icon.webp';
 import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
 import SunBtn from '../../assets/images/functional/sun-button.svg';
 import MoonBtn from '../../assets/images/functional/moon-button.svg';
@@ -15,6 +14,7 @@ import Link from "next/link";
 //   stateVar: boolean;
 // }
 
+//Navigation bar, has a dark mode toggle and links to other pages, aswell as a hamburger menu for mobile support
 function Navbar() {
   const [openMNav, SetOpenMNav] = useState(false); //For mobile navigation
   const [darkMode, setDarkMode] = useState(false); //Darkmode theme
@@ -47,7 +47,7 @@ function Navbar() {
   return (
       <div className="nav-bar">
       <div className="nav-row">
-        <a href="/" className="nav-title">{screenWidth ? <h1>Pumped</h1> : <h1>Pumped</h1>}</a>
+        <a href="/" className="nav-title">{screenWidth ? <h1>Liam</h1> : <h1>Liam</h1>}</a>
       </div>
       <nav className="non-mobile-nav">
         <ul>

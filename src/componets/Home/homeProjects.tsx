@@ -8,6 +8,7 @@ import projectInfo from '../../../public/projectItemContent.json';
 import Link from 'next/link';
 import Image from 'next/image';
 
+//Fetchs the proper image from the json doc, had to do this because nextjs dosent have a way to allow for dynamic images
 function GrabImage(ImageName: string){
   switch(ImageName){
     case "PersonalWebsiteTn":
@@ -31,6 +32,7 @@ function GrabImage(ImageName: string){
 // })
 // }
 
+//Projects page, fectches info from json doc and details projects i developed
 function HomeProjects(){
   //Only include the first 3 elements from project info
   const projectInfoArray = [...projectInfo.results].slice(0, 3)

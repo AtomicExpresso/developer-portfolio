@@ -1,5 +1,6 @@
 import React from 'react-dom'
 
+//For the main projects page
 function ProjectsTile(){
   const ConstructProjectFilter = ({Img, Title}: {Img: string ,Title: string}) => {
     return (

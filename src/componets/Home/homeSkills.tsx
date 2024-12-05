@@ -5,6 +5,7 @@ import HammerIcon from '../../assets/images/icons/decor/hammer-solid.svg';
 import SkillSet from '../../../public/skillSet.json';
 import Image from 'next/image';
 
+//builds a list of skills from the json doc
 function HomeSkills(){
   const CreateSkillItem = ({itemName}: {itemName: string}) => {
     return (

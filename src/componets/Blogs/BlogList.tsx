@@ -16,6 +16,7 @@ export const metadata = {
   title: "A list of blog articles i wrote",
 }
 
+//Fetchs a list of blog aritcles
 export default function BlogList() {
   const allPostsData = getSortedPostsData()
 

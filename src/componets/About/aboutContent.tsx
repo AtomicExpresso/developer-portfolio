@@ -72,9 +72,15 @@ function AboutContent(){
         </div>
         <hr></hr>
         <div className="about-text">
-          <p>👋 Hello there! Im Pumped, a dedicated full-stack developer with a love for turning innovative ideas into reality. i am constantly seeking new challenges and opportunities to expand my skills</p>
-          <p>I&#39;m a university student and I&#39;ve spent countless hours diving into web development and programming, using a variety of frame works, libaires, and languages. I have profficent knowledge both in front-end and back-end development using tools like React, Bootstrap, Nextjs, Mongo db, Node, Express, etc. I&#39;m always eager to expand my skills and tackle new challenges head-on.</p>
-          <p>Apart from programming, i also like going for Walks, Studying, Reading, and Cooking</p>
+          <p>
+            I&#39;m a university student and passionate full-stack software developer with a specialization in Python and various libaries, complemented by a strong foundation in general software development. My journey began with front-end technologies like React, Nextjs, CSS, and SCSS, and soon expanded into back-end, desktop applications, and game development.
+          </p>
+          <p>
+            I&#39;ve worked on a variety of programming projects, from web applications and mobile apps to video games and desktop applications. I&#39;m proficient in Python, JavaScript, PostgreSQL, and C++, and I enjoy learning new tools and technologies to improve my work. Throughout each project, I take a methodical approach to programming ensuring I write clean, effective and well-documented code that&#39;s easy to maintain and scales well for future growth.
+          </p>
+          <p>
+            I enjoy working on projects, where I can focus on every aspect of development, from planning to final implementation. Whether it&#39;s experimenting with new ideas or tackling complex challenges, I&#39;m always looking for ways to improve my skills and build something meaningful.
+          </p>
         </div>
       </div>
       </div>

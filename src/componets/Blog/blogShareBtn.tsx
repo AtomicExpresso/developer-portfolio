@@ -7,7 +7,7 @@ import linkicon from '@/assets/images/icons/functionalIcon/link-solid.svg';
 import shareicon from '@/assets/images/icons/functionalIcon/share-icon.svg';
 import facebookicon from '@/assets/images/icons/functionalIcon/facebook-icon.svg';
 
-
+//A social media share button and menu
 export default function BlogShareBtn() {
   const [blogpopup, setBlogPopup] = useState(false);
   const popupRef = useRef<any>(null);

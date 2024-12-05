@@ -3,22 +3,23 @@ import React from 'react'
 import ProfilePic from '../../assets/images/profile-pic.webp';
 import Twitter from '../../assets/images/icons/twitter.svg';
 import Youtube from '../../assets/images/icons/youtube.svg';
-import Instagram from '../../assets/images/icons/instagram.svg';
+import Linkedin from '../../assets/images/icons/linkedin.svg';
 import Discord from '../../assets/images/icons/discord.svg';
 import WhiteWave from '../../assets/images/decorations/banner-wave-white.svg';
 import Image from 'next/image';
 import { ReactTyped } from "react-typed";
 
+//Displays at the top of the home page
 function HomeHero() {
   return (
     <div className="hero-container">
       <div className='hero-group'>
         <div className="hero-col-1">
-          <h1>Hi, I&apos;m <span>Pumped</span>👋</h1>
+          <h1>Hi, I&apos;m <span>Liam</span>👋</h1>
           <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
             <h2>I&apos;m a</h2>
             <h2>
-              <ReactTyped strings={["Full-Stack developer", "Front-end developer", "UI/UX Designer", "back-end developer", "Web designer","Website developer"]} typeSpeed={100} backSpeed={50} loop />
+              <ReactTyped strings={["Software developer", "Fullstack developer", "UI/UX Designer", "back-end developer", "Desktop app developer","Website developer"]} typeSpeed={100} backSpeed={50} loop />
             </h2>
           </div>
           <p>Full-stack developer, dedicated to transforming innovative concepts into functional and user-friendly web applications</p>
@@ -31,7 +32,7 @@ function HomeHero() {
               <Image src={Youtube} alt='Youtube' draggable='false'></Image>
             </a>
             <a href="#">
-              <Image src={Instagram} alt='Instagram' draggable='false'></Image>
+              <Image src={Linkedin} alt='Linkedin' draggable='false'></Image>
             </a>
             <a href="#">
               <Image src={Discord} alt='Discord' draggable='false'></Image>
@@ -39,7 +40,7 @@ function HomeHero() {
           </div>
         </div>
         <div className="hero-col-2">
-          <Image src={ProfilePic} draggable='false' alt="Profile picture"></Image>
+          <img src="https://avatars.githubusercontent.com/u/156177896?v=4"draggable='false' alt="Profile picture"></img>
         </div>
       </div>
       <div className="wave-componet">

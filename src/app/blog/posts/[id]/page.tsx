@@ -8,6 +8,8 @@ import rehypePrism from 'rehype-prism';
 import 'prismjs/components/prism-python';  // Import necessary PrismJS language components
 import 'prismjs/themes/prism.css'; 
 
+//Uses gray matter and a few other js libaries to support md format, makes blog aritcles much easier to write and manage, ideally the md articles would probably be stored on a database somewhere but that isnt needed for the websites current scope
+
 type Params = {
   id: string;
 };

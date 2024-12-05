@@ -3,7 +3,9 @@
 import React, { useState, useEffect } from 'react'; 
 import upArrow from '../../assets/images/icons/functionalIcon/angle-up-solid.svg';
 import Image from 'next/image';
-  
+
+
+//A scroll to top button, appears after the client scrolls past a certain length and does as the name implies
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false); 
   

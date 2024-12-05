@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   description: "Welcome to my porfolio! im a front-end developer and student",
 };
 
+//Default layout for all pages
 export default function RootLayout({
   children,
 }: Readonly<{

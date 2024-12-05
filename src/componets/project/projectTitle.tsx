@@ -1,6 +1,7 @@
 import { ResultsType } from "@/typeings/types";
 import Link from "next/link";
 
+//Displays the title for the project as well as various info about the tech stack and links to repos
 export default function ProjectTitle({results}: {results: ResultsType}){
   return (
     <div className="item-project-title">

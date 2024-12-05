@@ -8,6 +8,7 @@ import Image from 'next/image';
 import projectInfo from '../../../public/projectItemContent.json'
 import Link from 'next/link';
 
+//Same as before, used to fetch proper images since nextjs dosent support dynamic images
 function GrabImage(Img: string){
   switch(Img){
     case "PersonalWebsiteTn":
