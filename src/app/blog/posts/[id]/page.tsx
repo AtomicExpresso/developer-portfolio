@@ -20,6 +20,7 @@ type PostData = {
   author: string;
   contentHtml: string;
   tags: string;
+  thumbnail: string;
 };
 
 // Fetch post data
@@ -57,7 +58,7 @@ export default async function BlogPage({ params }: { params: Params }) {
 
   return (
     <div>
-      <BlogHero />
+      <BlogHero banner={`${postData.thumbnail}`}/>
       <div className="blog-page-content">
         <div className="blog-page-title">
           <h1>{postData.title}</h1>
