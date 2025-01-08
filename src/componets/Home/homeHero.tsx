@@ -15,7 +15,7 @@ function HomeHero() {
     <div className="hero-container">
       <div className='hero-group'>
         <div className="hero-col-1">
-          <h1>Hi, I&apos;m <span>Liam</span>👋</h1>
+          <h1>Hi, I&apos;m <span>Felix</span>👋</h1>
           <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
             <h2>I&apos;m a</h2>
             <h2>

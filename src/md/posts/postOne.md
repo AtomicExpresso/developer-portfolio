@@ -1,6 +1,6 @@
 ---
 title: 'Developer Portfolios'
-date: '04-15-2024'
+date: '01-15-2023'
 author: "Admin"
 tags: "Development"
 preview: "how I built my portfolio and my thought process behind it."

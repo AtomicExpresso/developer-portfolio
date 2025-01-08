@@ -13,3 +13,24 @@ export interface ResultsType {
     description: string;
   }[]
 }
+
+export interface ProjectsDataType {
+  title: string;
+  date: string;
+  lang: string;
+  thumbnail: string;
+  source: string;
+  preview: string;
+  live: string;
+}
+
+export interface ProjectsDataTypeHTML {
+  title: string;
+  date: string;
+  contentHtml: string;
+  lang: string;
+  thumbnail: string;
+  source: string;
+  preview: string;
+  live: string;
+}

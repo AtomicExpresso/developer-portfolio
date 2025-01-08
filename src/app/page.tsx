@@ -2,9 +2,13 @@ import React from 'react'
 import { HomeHero } from "../componets/Home/homeHero";
 import HomeInfo from "../componets/Home/homeInfo";
 import HomeSkills from "../componets/Home/homeSkills";
-import HomeProjects from "../componets/Home/homeProjects";
 import { Metadata } from 'next';
 import './styles/home-globals.scss'
+import ProjectContainer from '@/componets/Projects/projectContainer';
+import '@/app/styles/blog-globals.scss'
+import '@/app/styles/project-globals.scss'
+import Image from 'next/image';
+import ProjectIcon from '@/assets/images/icons/decor/paintbrush-solid.svg';
 
 export const metadata: Metadata = {
   title: "Pumped dev",
@@ -17,7 +21,15 @@ function HomePage() {
       <HomeHero></HomeHero>
       <HomeInfo></HomeInfo>
       <HomeSkills></HomeSkills>
-      <HomeProjects></HomeProjects>
+      <div className="home-projects">
+        <div className='project-title'>
+          <Image src={ProjectIcon} draggable='false' alt="Projects icon"></Image>
+          <h1>My Projects</h1>
+          </div>
+          <p>Heres a list of my best projects ive developed and worked on</p>
+          <hr></hr>
+        <ProjectContainer/>
+      </div>
     </div>
   )
 }

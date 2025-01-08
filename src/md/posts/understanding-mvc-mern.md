@@ -1,6 +1,6 @@
 ---
 title: 'Understaing MVC for MERN stack'
-date: '07-04-2024'
+date: '03-04-2023'
 author: "Admin"
 tags: "MERN Stack"
 preview: "Outline for building fullstack applications following MVC architecture"

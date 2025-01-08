@@ -1,6 +1,6 @@
 ---
 title: 'OOP In Python'
-date: '11-20-2024'
+date: '1-20-2023'
 author: "Admin"
 tags: "Development"
 preview: "How to use object oriented programming in python"

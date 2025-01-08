@@ -4,6 +4,9 @@
 import fs from 'fs'
 import path from 'path'
 
+//Get types
+import { ProjectsDataType, ProjectsDataTypeHTML } from '@/typeings/types'
+
 // Import 'gray-matter', library for parsing the metadata in each markdown file
 import matter from 'gray-matter'
 
@@ -13,7 +16,7 @@ import html from 'remark-html'
 
 // --------------------------------
 // GET THE PATH OF THE POSTS FOLDER
-const postsDirectory = path.join(process.cwd(), '/src/md/posts') // process.cwd() returns the absolute path of the current working directory
+const postsDirectory = path.join(process.cwd(), '/src/md/projects') // process.cwd() returns the absolute path of the current working directory
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -35,7 +38,7 @@ export function getSortedPostsData() {
     // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string; title: string; tags: string; preview: string; thumbnail: string;}),
+      ...(matterResult.data as ProjectsDataTypeHTML),
     }
   })
 
@@ -82,6 +85,8 @@ export async function getPostData(id: string) {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string; author: string; tags: string; thumbnail: string;}),
+    ...(matterResult.data as
+      ProjectsDataType
+    ),
   }
 }

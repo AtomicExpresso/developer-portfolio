@@ -1,6 +1,6 @@
 ---
 title: 'Stacking Up: A Deep Dive into Stacks'
-date: '01-02-2024'
+date: '02-02-2023'
 author: "Admin"
 tags: "Development"
 preview: " A Deep Dive into Stacks and Their Real-World Applications"

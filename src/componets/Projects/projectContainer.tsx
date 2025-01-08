@@ -1,64 +1,47 @@
 import React from 'react'
-import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
-import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
-import MovieBoxTn from '../../assets/images/thumbnails/moviebox.webp';
-
+import Link from 'next/link';
 import Image from 'next/image';
 
-import projectInfo from '../../../public/projectItemContent.json'
-import Link from 'next/link';
+import { getSortedPostsData } from '@/lib/projects'
 
-//Same as before, used to fetch proper images since nextjs dosent support dynamic images
-function GrabImage(Img: string){
-  switch(Img){
+import PersonalWebsiteThumbnail from '@/assets/images/thumbnails/personal-website.webp';
+import MovieBoxTn from '@/assets/images/thumbnails/moviebox.webp';
+import TubeFetcher from '@/assets/images/thumbnails/tubefetcher.png';
+
+//Fetchs the proper image from the json doc, had to do this because nextjs dosent have a way to allow for dynamic images
+function GrabImage(ImageName: string){
+  switch(ImageName){
     case "PersonalWebsiteTn":
-      return PersonalWebsiteTn;
-    break;
+      return PersonalWebsiteThumbnail;
     case "MovieBox":
       return MovieBoxTn;
-    break;
+    case "TubeFetcher":
+      return TubeFetcher;
     default:
       return MovieBoxTn;
-    break;
   }
 }
 
 function ProjectContainer(){
-  const ConstructProjectItem = ({project}: any) => {
-    return (
-      <div className="project-page-item">
-      <Image src={GrabImage(project.poster_path)} draggable='false' alt={`${project.name}`}></Image>
-      <h1>{project.name}</h1>
-      <div className='home-project-item-techstack'>
-        {project.Lang.split(" • ").map((item: any, index: number) => {
-            return (
-              <div key={index} className='home-project-item-skill'>
-                <h2>{item}</h2>
-              </div>
-            )
-          })
-        }
-      </div>
-      <p>{project.previewDesc}</p>
-      <div className='project-item-btn'>
-        <Link href={`/project/[id]`} as={`/project/${project.ProjectLink}`}>
-          <button className="btn btn-primary">View</button>
-        </Link>
-      </div>
-    </div>
-    )
-  }
+  const allPostsData = getSortedPostsData()
 
   return (
-    <div className="project-container">
-      {projectInfo.results.map((project, index) => {
-        return (
-          <div key={index}>
-            <ConstructProjectItem project={project}/>
-          </div>
-        )
-      })}
-    </div>
+      <div className="project-container">
+        {allPostsData.map(({ id, title, lang, preview, thumbnail }) => (
+              <div key={id} className='blog-list-item'>
+                <Image 
+                  alt={title} 
+                  src={GrabImage(thumbnail)}
+                />
+                <h2>{title}</h2>
+                  <div className='blog-list-info-container'>
+                    <h3>{lang}</h3>
+                  </div>
+                  <p>{preview}</p>
+                <Link href={`/projects/project/[id]`} as={`/projects/project/${id}`}><button className='btn btn-primary'>View</button></Link>
+              </div>
+            ))}
+      </div>
   )
 }
 

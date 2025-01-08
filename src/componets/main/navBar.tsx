@@ -47,7 +47,7 @@ function Navbar() {
   return (
       <div className="nav-bar">
       <div className="nav-row">
-        <a href="/" className="nav-title">{screenWidth ? <h1>Liam</h1> : <h1>Liam</h1>}</a>
+        <a href="/" className="nav-title">{screenWidth ? <h1>Felix</h1> : <h1>Felix</h1>}</a>
       </div>
       <nav className="non-mobile-nav">
         <ul>
