@@ -2,8 +2,8 @@
 title: 'Stacking Up: A Deep Dive into Stacks'
 date: '02-02-2023'
 author: "Admin"
-tags: "Development"
-preview: " A Deep Dive into Stacks and Their Real-World Applications"
+tags: "Computer Science"
+preview: "A Deep Dive into Stacks and Their Real-World Applications"
 thumbnail: "https://images.unsplash.com/photo-1458501534264-7d326fa0ca04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3RhY2slMjAlMjBvZiUyMHJvY2tzfGVufDB8fDB8fHww"
 ---
 

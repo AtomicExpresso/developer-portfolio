@@ -2,7 +2,7 @@
 title: 'Understaing MVC for MERN stack'
 date: '03-04-2023'
 author: "Admin"
-tags: "MERN Stack"
+tags: "Tutorial"
 preview: "Outline for building fullstack applications following MVC architecture"
 thumbnail: "https://raw.githubusercontent.com/AtomicExpresso/developer-portfolio/master/src/assets/images/blog-assets/backend-mvc-design.webp"
 ---

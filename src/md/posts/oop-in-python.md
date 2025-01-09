@@ -2,7 +2,7 @@
 title: 'OOP In Python'
 date: '1-20-2023'
 author: "Admin"
-tags: "Development"
+tags: "Computer Science"
 preview: "How to use object oriented programming in python"
 thumbnail: "https://images.unsplash.com/photo-1656680632373-e2aec264296b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHl0aG9uJTIwcHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D"
 ---
